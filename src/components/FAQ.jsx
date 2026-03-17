@@ -54,37 +54,53 @@ export default function FAQ() {
     },
   ];
 
+  const toggle = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
-    <div className="py-14 bg-[#f6f8fc]">
+    <div className="py-12 md:py-16 bg-[#f6f8fc]">
       <Container>
 
-        {/* Title */}
-        <h2 className="text-center text-blue-600 font-semibold mb-10">
+        {/* TITLE */}
+        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-blue-600 mb-10 md:mb-14">
           Frequently Asked Questions
         </h2>
 
         {/* FAQ LIST */}
-        <div className="flex flex-col gap-4 max-w-[900px] mx-auto">
+        <div className="max-w-3xl mx-auto space-y-4">
 
-          {faqs.map((item, index) => (
+          {faqs.map((faq, i) => (
             <div
-              key={index}
-              className="bg-white p-5 rounded-lg shadow-sm border cursor-pointer"
-              onClick={() =>
-                setOpenIndex(openIndex === index ? null : index)
-              }
+              key={i}
+              className="bg-white rounded-xl shadow-md hover:shadow-lg transition overflow-hidden"
             >
-              {/* Question */}
-              <h3 className="text-sm font-semibold text-purple-600">
-                {item.q}
-              </h3>
 
-              {/* Answer */}
-              {openIndex === index && (
-                <p className="text-xs text-gray-600 mt-2 leading-relaxed">
-                  {item.a}
+              {/* QUESTION */}
+              <button
+                onClick={() => toggle(i)}
+                className="w-full flex justify-between items-center px-5 md:px-6 py-4 text-left"
+              >
+                <span className="text-[15px] md:text-[17px] font-semibold text-purple-600">
+                  {faq.q}
+                </span>
+
+                <span className="text-blue-600 text-xl">
+                  {openIndex === i ? "−" : "+"}
+                </span>
+              </button>
+
+              {/* ANSWER */}
+              <div
+                className={`px-5 md:px-6 overflow-hidden transition-all duration-300 ${
+                  openIndex === i ? "max-h-40 pb-4" : "max-h-0"
+                }`}
+              >
+                <p className="text-gray-600 text-[14px] md:text-[15px] leading-relaxed">
+                  {faq.a}
                 </p>
-              )}
+              </div>
+
             </div>
           ))}
 

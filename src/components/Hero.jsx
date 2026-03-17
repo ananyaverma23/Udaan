@@ -1,4 +1,5 @@
 import Container from "./Container";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -26,9 +27,11 @@ export default function Hero() {
                 Book Consultation
               </button>
 
-              <button className="border border-white px-6 py-3 rounded-full text-sm font-medium">
-                Learn More
-              </button>
+              <Link to="/about">
+                <button className="border border-white px-6 py-3 rounded-full text-sm font-medium">
+                  Learn More
+                </button>
+              </Link> 
             </div>
           </div>
 

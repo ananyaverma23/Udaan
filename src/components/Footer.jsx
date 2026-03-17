@@ -2,57 +2,90 @@ import Container from "./Container";
 
 export default function Footer() {
   return (
-    <div className="bg-[#f1f5f9] py-12">
+    <div className="bg-[#0b1b34] text-white pt-12 md:pt-16 pb-6">
       <Container>
 
-        <div className="grid grid-cols-4 gap-8 text-sm text-gray-600">
+        {/* GRID */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
 
-          {/* Brand */}
+          {/* CONTACT */}
           <div>
-            <h2 className="text-blue-600 font-semibold mb-3">UDAAN</h2>
-            <p className="text-xs">
-              Advanced fertility & fetal medicine care with compassion and expertise.
+            <h3 className="text-[18px] font-semibold mb-4">Contact Us</h3>
+
+            <p className="text-gray-300 text-[14px] leading-relaxed mb-3">
+              70 BC Rd, Khosbagan,<br />
+              Bardhaman, West Bengal<br />
+              713104
+            </p>
+
+            <p className="text-gray-300 text-[14px] mb-2">
+              Phone: +91 7866819192 / +91 6297391710
+            </p>
+
+            <p className="text-gray-300 text-[14px] mb-4">
+              Email: info@udaanfertility.com
+            </p>
+
+            <h4 className="font-semibold mb-2">Working Hours</h4>
+            <p className="text-gray-300 text-[14px]">
+              Monday - Sunday : 8:00 AM - 6:00 PM
             </p>
           </div>
 
-          {/* Quick Links */}
+          {/* QUICK LINKS */}
           <div>
-            <h3 className="font-semibold mb-3">Quick Links</h3>
-            <ul className="space-y-2 text-xs">
-              <li>Home</li>
-              <li>Services</li>
-              <li>About</li>
-              <li>Doctors</li>
-              <li>Contact</li>
+            <h3 className="text-[18px] font-semibold mb-4">Quick Links</h3>
+
+            <ul className="space-y-2 text-gray-300 text-[14px]">
+              <li className="hover:text-white cursor-pointer">About Us</li>
+              <li className="hover:text-white cursor-pointer">Services</li>
+              <li className="hover:text-white cursor-pointer">Treatment Process</li>
+              <li className="hover:text-white cursor-pointer">FAQ</li>
+              <li className="hover:text-white cursor-pointer">Contact</li>
             </ul>
           </div>
 
-          {/* Services */}
+          {/* SERVICES */}
           <div>
-            <h3 className="font-semibold mb-3">Services</h3>
-            <ul className="space-y-2 text-xs">
-              <li>IVF Treatment</li>
+            <h3 className="text-[18px] font-semibold mb-4">Services</h3>
+
+            <ul className="space-y-2 text-gray-300 text-[14px]">
+              <li>Fertility Testing</li>
               <li>IUI Treatment</li>
-              <li>Fetal Medicine</li>
+              <li>IVF Treatment</li>
+              <li>Egg Freezing</li>
+              <li>Sperm Banking</li>
+              <li>Fetal Medicine Services</li>
               <li>Genetic Counselling</li>
             </ul>
           </div>
 
-          {/* Contact */}
+          {/* FOLLOW + NEWSLETTER */}
           <div>
-            <h3 className="font-semibold mb-3">Contact</h3>
-            <ul className="space-y-2 text-xs">
-              <li>Bardhaman, India</li>
-              <li>+91 XXXXX XXXXX</li>
-              <li>info@udaan.com</li>
-            </ul>
+            <h3 className="text-[18px] font-semibold mb-4">Follow Us</h3>
+
+            <div className="flex gap-4 text-gray-300 text-[14px] mb-6">
+              <p className="hover:text-white cursor-pointer">Facebook</p>
+              <p className="hover:text-white cursor-pointer">Twitter</p>
+              <p className="hover:text-white cursor-pointer">Instagram</p>
+            </div>
+
+            <h3 className="text-[18px] font-semibold mb-2">Newsletter</h3>
+
+            <p className="text-gray-300 text-[14px] mb-4">
+              Subscribe to our newsletter for updates and fertility tips
+            </p>
+
+            <button className="bg-blue-600 px-5 py-2 rounded-md hover:bg-blue-700 transition">
+              Subscribe
+            </button>
           </div>
 
         </div>
 
-        {/* Bottom Line */}
-        <div className="text-center text-xs text-gray-400 mt-10">
-          © 2026 UDAAN. All rights reserved.
+        {/* BOTTOM */}
+        <div className="border-t border-white/10 mt-10 pt-6 text-center text-gray-400 text-[14px]">
+          © 2025 UDAAN Fertility Clinic. All rights reserved.
         </div>
 
       </Container>

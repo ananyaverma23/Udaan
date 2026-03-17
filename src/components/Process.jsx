@@ -5,50 +5,52 @@ export default function Process() {
     {
       number: "1",
       title: "Initial Consultation",
-      desc: "Comprehensive evaluation and personalized plan",
+      desc: "Comprehensive evaluation and treatment planning",
     },
     {
       number: "2",
       title: "Diagnostic Testing",
-      desc: "Advanced tests for accurate diagnosis",
+      desc: "Complete fertility assessment and analysis",
     },
     {
       number: "3",
       title: "Treatment Plan",
-      desc: "Tailored medical treatment approach",
+      desc: "Personalized treatment protocol development",
     },
     {
       number: "4",
       title: "Treatment & Support",
-      desc: "Ongoing care and monitoring",
+      desc: "Ongoing care and monitoring throughout the process",
     },
   ];
 
   return (
-    <div className="py-14 bg-[#f6f8fc]">
+    <div className="py-12 md:py-16 bg-[#f6f8fc]">
       <Container>
 
-        <h2 className="text-center text-blue-600 font-semibold mb-10">
+        {/* TITLE */}
+        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-blue-600 mb-12 md:mb-16">
           Treatment Process
         </h2>
 
-        <div className="grid grid-cols-4 gap-6 text-center">
+        {/* STEPS */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10 text-center">
 
           {steps.map((step, i) => (
             <div key={i} className="flex flex-col items-center">
 
-              {/* Circle */}
-              <div className="w-10 h-10 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold mb-3">
+              {/* CIRCLE */}
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-[18px] md:text-[20px] font-semibold mb-4">
                 {step.number}
               </div>
 
-              {/* Title */}
-              <h3 className="text-sm font-semibold mb-1">
+              {/* TITLE */}
+              <h3 className="text-[18px] md:text-[20px] font-semibold text-purple-600 mb-2">
                 {step.title}
               </h3>
 
-              {/* Description */}
-              <p className="text-xs text-gray-500 max-w-[180px]">
+              {/* DESC */}
+              <p className="text-[14px] md:text-[15px] text-gray-600 leading-relaxed max-w-[220px]">
                 {step.desc}
               </p>
 
