@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+body {  
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+  background: #f6f8fc;
+  color: #1f2937;
+}
+
+button {
+  cursor: pointer;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
