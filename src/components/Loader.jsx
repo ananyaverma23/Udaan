@@ -22,7 +22,7 @@ export default function Loader({ onFinished }) {
         }
         return prev + 1;
       });
-    }, 40);
+    }, 35);
     return () => clearInterval(interval);
   }, [onFinished]);
 
@@ -30,7 +30,7 @@ export default function Loader({ onFinished }) {
   useEffect(() => {
     const textInterval = setInterval(() => {
       setTextIndex((prev) => (prev + 1) % messages.length);
-    }, 2500);
+    }, 2000);
     return () => clearInterval(textInterval);
   }, []);
 

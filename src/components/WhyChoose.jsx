@@ -1,18 +1,22 @@
 import Container from "./Container";
+import { Users, Cpu, HeartHandshake } from "lucide-react";
 
 export default function WhyChoose() {
   const data = [
     {
       title: "Expert Team",
       desc: "Our team of fertility specialists, embryologists, fetal medicine experts, geneticists and support staff bring years of experience and expertise to provide the best care.",
+      icon: Users,
     },
     {
       title: "Modern Technology",
       desc: "State-of-the-art facilities and advanced reproductive technologies to ensure the highest success rates.",
+      icon: Cpu,
     },
     {
       title: "Personalized Care",
       desc: "Tailored treatment plans and compassionate support throughout your fertility journey.",
+      icon: HeartHandshake,
     },
   ];
 
@@ -36,7 +40,7 @@ export default function WhyChoose() {
               
               {/* ICON */}
               <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 md:mb-6">
-                <span className="text-blue-600 text-lg md:text-xl">✓</span>
+                <item.icon className="text-blue-600" size={24} />
               </div>
 
               {/* TITLE */}

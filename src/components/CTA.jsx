@@ -1,4 +1,5 @@
 import Container from "./Container";
+import { Link } from "react-router-dom";
 import { Calendar, Phone, Star } from "lucide-react";
 
 export default function CTA() {
@@ -22,10 +23,10 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
 
             {/* PRIMARY */}
-            <button className="flex items-center gap-2 bg-white text-blue-600 px-6 sm:px-7 py-3 rounded-full font-medium text-[14px] sm:text-[15px] hover:scale-105 transition">
+            <Link to="/appointment" className="flex items-center gap-2 bg-white text-blue-600 px-6 sm:px-7 py-3 rounded-full font-medium text-[14px] sm:text-[15px] hover:scale-105 transition">
               <Calendar size={18} />
               Book Appointment
-            </button>
+            </Link>
 
             {/* SECONDARY */}
             <button className="flex items-center gap-2 border border-white px-6 sm:px-7 py-3 rounded-full font-medium text-[14px] sm:text-[15px] hover:bg-white hover:text-blue-600 transition">

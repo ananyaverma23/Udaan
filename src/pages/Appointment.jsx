@@ -2,7 +2,7 @@ import Container from "../components/Container";
 import { MessageCircle } from "lucide-react";
 
 export default function Appointment() {
-  const whatsappUrl = "https://wa.me/91XXXXXXXXXX?text=Hi, I want to book an appointment.";
+  const whatsappUrl = "https://wa.me/91XXXXXXXXXX?text=Hi Udaan, I want to book an appointment.";
 
   return (
     <div className="py-20 bg-blue-50/30 min-h-[70vh] flex items-center">

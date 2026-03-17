@@ -23,15 +23,17 @@ export default function Hero() {
             </p>
 
             <div className="flex gap-4">
-              <button className="bg-white text-blue-700 px-6 py-3 rounded-full text-sm font-semibold">
-                Book Consultation
-              </button>
+              <Link to="/appointment">
+                <button className="bg-white text-blue-700 px-6 py-3 rounded-full text-sm font-semibold">
+                  Book Consultation
+                </button>
+              </Link>
 
               <Link to="/about">
                 <button className="border border-white px-6 py-3 rounded-full text-sm font-medium">
                   Learn More
                 </button>
-              </Link> 
+              </Link>
             </div>
           </div>
 

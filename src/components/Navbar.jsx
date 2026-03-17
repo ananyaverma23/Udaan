@@ -7,13 +7,6 @@ import { ChevronDown, Plus, Minus, Menu, X } from "lucide-react";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [showServices, setShowServices] = useState(false);
-
-  // 1. UPDATED: Replace 'XXXXXXXXXX' with the actual 10-digit number (e.g., 919876543210)
-  const WHATSAPP_NUMBER = "9304984291"; 
-  const PRE_FILLED_MESSAGE = "Hello Udaan Clinic, I would like to book an appointment for a consultation.";
-
-  // 2. Encoded URL for WhatsApp
-  const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(PRE_FILLED_MESSAGE)}`;
   
   // Mobile Accordion States
   const [isServicesOpen, setIsServicesOpen] = useState(false);
@@ -76,7 +69,7 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  const mobileTextStyle = "text-[15px] text-gray-700 font-medium";
+  const mobileTextStyle = "text-[16px] text-gray-700 font-medium";
 
   return (
     <div className="w-full sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
@@ -105,17 +98,12 @@ export default function Navbar() {
             <Link to="/doctors" className="hover:text-blue-600 transition">Our Doctors</Link>
             <Link to="/contact" className="hover:text-blue-600 transition">Contact</Link>
             
-            {/* UPDATED: Desktop Appointment Link */}
-            <a 
-              href={whatsappUrl} 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block"
-            >
-              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm hover:scale-105 transition">
+            {/* Redirects to the internal Appointment Page */}
+            <Link to="/appointment">
+              <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-2 rounded-full text-sm hover:scale-105 transition shadow-lg shadow-blue-50">
                 Book Appointment
               </button>
-            </a>
+            </Link>
           </div>
 
           {/* MOBILE TOGGLE */}
@@ -199,17 +187,12 @@ export default function Navbar() {
             <Link to="/doctors" onClick={() => setIsOpen(false)} className={mobileTextStyle}>Doctors</Link>
             <Link to="/contact" onClick={() => setIsOpen(false)} className={mobileTextStyle}>Contact</Link>
             
-            {/* UPDATED: Mobile Appointment Link */}
-            <a 
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={() => setIsOpen(false)}
-            >
-              <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-xl font-bold shadow-lg mt-2">
+            {/* Redirects to the internal Appointment Page */}
+            <Link to="/appointment" onClick={() => setIsOpen(false)} className="mt-2">
+              <button className="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white py-4 rounded-xl font-bold shadow-lg">
                 Book Appointment
               </button>
-            </a>
+            </Link>
           </div>
         )}
       </Container>
