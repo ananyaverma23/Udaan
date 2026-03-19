@@ -23,6 +23,10 @@ import Neurosonography from "./pages/ServicePages/Neurosonography";
 import MultiplePregnancy from "./pages/ServicePages/MultiplePregnancy";
 import Amniocentesis from "./pages/ServicePages/Amniocentesis"; 
 import CVS from "./pages/ServicePages/CVS";
+import FetalReductions from "./pages/ServicePages/FetalReductions";
+import NIPT from "./pages/ServicePages/NIPT";
+import PelvicScan from "./pages/ServicePages/PelvicScan";
+import FollicularStudy from "./pages/ServicePages/FollicularStudy";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -40,6 +44,8 @@ export default function App() {
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/appointment" element={<Appointment />} />
+
+          {/* Service Pages */}
           <Route path="/services/fertility-testing" element={<FertilityTesting />} />
           <Route path="/services/iui" element={<IUI />} />
           <Route path="/services/ivf" element={<IVF />} />
@@ -55,6 +61,10 @@ export default function App() {
           <Route path="/services/multiple-pregnancy" element={<MultiplePregnancy />} />
           <Route path="/services/amniocentesis" element={<Amniocentesis />} />
           <Route path="/services/cvs" element={<CVS />} />
+          <Route path="/services/fetal-reductions" element={<FetalReductions />} />
+          <Route path="/services/nipt" element={<NIPT />} />
+          <Route path="/services/pelvic-scan" element={<PelvicScan />} />
+          <Route path="/services/follicular-study" element={<FollicularStudy />} />
         </Routes>
 
         <Footer />
