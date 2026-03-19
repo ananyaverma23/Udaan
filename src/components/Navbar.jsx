@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import Container from "./Container";
 import ServicesDropdown from "./ServicesDropdown";
 import { ChevronDown, Plus, Minus, Menu, X } from "lucide-react";
+import UdaanLogo from "../assets/UdaanLogo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,6 +28,7 @@ export default function Navbar() {
           children: [
             { name: "Egg Freezing", path: "/services/egg-freezing" },
             { name: "Sperm Banking", path: "/services/sperm-banking" },
+            { name: "Nutritional Guidance", path: "/services/nutrition" },
           ],
         },
       ],
@@ -37,14 +39,21 @@ export default function Navbar() {
         {
           name: "Obstetric Scan",
           children: [
-            { name: "NT Scan", path: "/services/nt-scan" },
+            { name: "Nuchal Translucency Scan", path: "/services/nt-scan" },
             { name: "Anomaly Scan", path: "/services/anomaly-scan" },
+            { name: "Fetal Growth Scan", path: "/services/growth-scan" },
+            { name: "Fetal Doppler Scan", path: "/services/doppler-scan" },
+            { name: "Fetal Echo Scan", path: "/services/fetal-echo" },
+            { name: "Fetal Neurosonography", path: "/services/neurosonography" },
+            { name: "Multiple Pregnancies Scan", path: "/services/multiple-pregnancy" },
           ],
         },
         {
           name: "Interventional Procedures",
           children: [
             { name: "Amniocentesis", path: "/services/amniocentesis" },
+            { name: "Chorionic Villus Sampling", path: "/services/cvs" },
+            { name: "Selective Fetal Reductions", path: "/services/fetal-reductions" },
             { name: "NIPT", path: "/services/nipt" },
           ],
         },
@@ -56,6 +65,14 @@ export default function Navbar() {
         { name: "Female Pelvic Scan", path: "/services/pelvic-scan" },
         { name: "Follicular Study Scan", path: "/services/follicular-study" },
       ],
+    },
+    {
+      name: "Genetic Counselling",
+      path: "/services/genetic-counselling",
+    },
+    {
+      name: "Multispeciality OPD Services",
+      path: "/services/multispeciality-opd",
     },
   ];
 
@@ -78,7 +95,7 @@ export default function Navbar() {
           
           {/* LOGO */}
           <Link to="/" className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-full border-2 border-blue-600 flex items-center justify-center text-blue-600 font-bold">U</div>
+            <img src={UdaanLogo} alt="Udaan logo" className="w-10 h-10 sm:w-11 sm:h-11 object-contain" />
             <div className="leading-tight">
               <p className="text-blue-700 font-semibold tracking-wide">UDAAN</p>
               <p className="text-[11px] text-gray-500">Fetal Medicine & Fertility Clinic</p>
@@ -140,10 +157,14 @@ export default function Navbar() {
                         <span className={`${mobileTextStyle} transition-colors ${mobileLevel1 === item.name ? "text-blue-600" : ""}`}>
                           {item.name}
                         </span>
-                        {mobileLevel1 === item.name ? <Minus size={18} className="text-blue-600" /> : <Plus size={18} className="text-gray-400" />}
+                        {item.subItems ? (
+                          mobileLevel1 === item.name ? <Minus size={18} className="text-blue-600" /> : <Plus size={18} className="text-gray-400" />
+                        ) : (
+                          <Link to={item.path || "/"} onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-blue-500">Visit</Link>
+                        )}
                       </div>
 
-                      {mobileLevel1 === item.name && (
+                      {item.subItems && mobileLevel1 === item.name && (
                         <div className="pl-4 mt-4 flex flex-col gap-4 animate-in fade-in slide-in-from-left-1 duration-200">
                           {item.subItems.map((sub) => (
                             <div key={sub.name}>

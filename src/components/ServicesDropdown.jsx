@@ -7,12 +7,13 @@ export default function ServicesDropdown() {
   const [activeSubMenu, setActiveSubMenu] = useState(null);
   const [subMenuIndex, setSubMenuIndex] = useState(null);
 
+  // ✅ Only last two are clickable
   const menu = [
     "Infertility Services",
     "Fetal Medicine Services",
     "Gynaecology Scans",
-    "Genetic Counselling",
-    "Multispeciality OPD services",
+    { name: "Genetic Counselling", path: "/services/genetic-counselling" },
+    { name: "Multispeciality OPD services", path: "/services/opd-services" },
   ];
 
   const subMenuItems = {
@@ -67,28 +68,48 @@ export default function ServicesDropdown() {
         setSubMenuIndex(null);
       }}
     >
-      {/* LAYER 1 - Lowest Z-index */}
+      {/* LAYER 1 */}
       <div className="bg-white rounded-2xl shadow-xl w-52 py-2 text-[15px] border border-gray-100 z-10 relative">
-        {menu.map((item) => (
-          <div
-            key={item}
-            onMouseEnter={() => {
-              setActiveMenu(item);
-              setActiveSubMenu(null);
-            }}
-            className={`px-4 py-3 flex justify-between items-center cursor-pointer leading-tight
-              ${activeMenu === item ? "bg-blue-50 text-blue-600 font-semibold" : "text-gray-600 hover:bg-gray-50"}`}
-          >
-            <span className="flex items-center gap-2">
-              <span className="text-blue-500 font-bold">•</span>
-              {item}
-            </span>
-            {subMenuItems[item] && <ChevronRight size={14} className="flex-shrink-0" />}
-          </div>
-        ))}
+        {menu.map((item) => {
+          const isObject = typeof item === "object";
+          const name = isObject ? item.name : item;
+          const path = isObject ? item.path : null;
+
+          return (
+            <div
+              key={name}
+              onMouseEnter={() => {
+                setActiveMenu(name);
+                setActiveSubMenu(null);
+              }}
+              className={`px-4 py-3 flex justify-between items-center cursor-pointer leading-tight
+                ${
+                  activeMenu === name
+                    ? "bg-blue-50 text-blue-600 font-semibold"
+                    : "text-gray-600 hover:bg-gray-50"
+                }`}
+            >
+              {path ? (
+                <Link to={path} className="flex items-center gap-2 w-full">
+                  <span className="text-blue-500 font-bold">•</span>
+                  {name}
+                </Link>
+              ) : (
+                <span className="flex items-center gap-2">
+                  <span className="text-blue-500 font-bold">•</span>
+                  {name}
+                </span>
+              )}
+
+              {subMenuItems[name] && (
+                <ChevronRight size={14} className="flex-shrink-0" />
+              )}
+            </div>
+          );
+        })}
       </div>
 
-      {/* LAYER 2 - Middle Z-index */}
+      {/* LAYER 2 */}
       {activeMenu && subMenuItems[activeMenu] && (
         <div className="relative z-20">
           <div className="bg-white rounded-2xl shadow-xl w-52 py-2 text-[15px] border border-gray-100 ml-[-10px] animate-in fade-in slide-in-from-left-1 duration-150">
@@ -100,25 +121,34 @@ export default function ServicesDropdown() {
                   setSubMenuIndex(index);
                 }}
                 className={`px-4 py-3 flex justify-between items-center cursor-pointer leading-tight
-                  ${activeSubMenu === item.name ? "bg-blue-50 text-blue-600 font-semibold" : "text-gray-600 hover:bg-gray-50"}`}
+                  ${
+                    activeSubMenu === item.name
+                      ? "bg-blue-50 text-blue-600 font-semibold"
+                      : "text-gray-600 hover:bg-gray-50"
+                  }`}
               >
                 {item.path ? (
                   <Link to={item.path} className="flex-1 break-words mr-2">
-                    <span className="text-blue-500 mr-2 font-bold">•</span>{item.name}
+                    <span className="text-blue-500 mr-2 font-bold">•</span>
+                    {item.name}
                   </Link>
                 ) : (
                   <span className="flex-1 break-words mr-2">
-                    <span className="text-blue-500 mr-2 font-bold">•</span>{item.name}
+                    <span className="text-blue-500 mr-2 font-bold">•</span>
+                    {item.name}
                   </span>
                 )}
-                {item.children && <ChevronRight size={14} className="flex-shrink-0" />}
+                {item.children && (
+                  <ChevronRight size={14} className="flex-shrink-0" />
+                )}
               </div>
             ))}
           </div>
 
-          {/* LAYER 3 - Top Z-index */}
+          {/* LAYER 3 */}
           {activeSubMenu &&
-            subMenuItems[activeMenu]?.find((i) => i.name === activeSubMenu)?.children && (
+            subMenuItems[activeMenu]?.find((i) => i.name === activeSubMenu)
+              ?.children && (
               <div
                 className="absolute left-[calc(100%-12px)] bg-white rounded-2xl shadow-2xl w-52 py-2 text-[15px] border border-gray-100 z-30 animate-in fade-in slide-in-from-left-1 duration-150"
                 style={{ top: `${subMenuIndex * 42}px` }}

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import UdaanLogo from "../assets/UdaanLogo.png";
 
 export default function Loader({ onFinished }) {
   const [progress, setProgress] = useState(0);
@@ -22,7 +23,7 @@ export default function Loader({ onFinished }) {
         }
         return prev + 1;
       });
-    }, 35);
+    }, 10);
     return () => clearInterval(interval);
   }, [onFinished]);
 
@@ -48,7 +49,7 @@ export default function Loader({ onFinished }) {
         {/* Logo Container */}
         <div className="relative w-32 h-32 sm:w-40 sm:h-40 rounded-full bg-white shadow-[0_0_40px_rgba(0,0,0,0.08)] flex items-center justify-center p-6 border border-gray-50">
           <img 
-            src="/logo.png" 
+            src={UdaanLogo} 
             alt="UDAAN Logo" 
             className="w-full h-full object-contain"
           />
