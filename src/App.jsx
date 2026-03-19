@@ -19,6 +19,10 @@ import AnomalyScan from "./pages/ServicePages/AnomalyScan";
 import GrowthScan from "./pages/ServicePages/GrowthScan";
 import DopplerScan from "./pages/ServicePages/DopplerScan";
 import EchoScan from "./pages/ServicePages/EchoScan";
+import Neurosonography from "./pages/ServicePages/Neurosonography";
+import MultiplePregnancy from "./pages/ServicePages/MultiplePregnancy";
+import Amniocentesis from "./pages/ServicePages/Amniocentesis"; 
+import CVS from "./pages/ServicePages/CVS";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -47,6 +51,10 @@ export default function App() {
           <Route path="/services/growth-scan" element={<GrowthScan />} />
           <Route path="/services/doppler-scan" element={<DopplerScan />} />
           <Route path="/services/fetal-echo" element={<EchoScan />} />
+          <Route path="/services/neurosonography" element={<Neurosonography />} />
+          <Route path="/services/multiple-pregnancy" element={<MultiplePregnancy />} />
+          <Route path="/services/amniocentesis" element={<Amniocentesis />} />
+          <Route path="/services/cvs" element={<CVS />} />
         </Routes>
 
         <Footer />
