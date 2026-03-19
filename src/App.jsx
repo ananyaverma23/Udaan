@@ -27,6 +27,8 @@ import FetalReductions from "./pages/ServicePages/FetalReductions";
 import NIPT from "./pages/ServicePages/NIPT";
 import PelvicScan from "./pages/ServicePages/PelvicScan";
 import FollicularStudy from "./pages/ServicePages/FollicularStudy";
+import GeneticCounselling from "./pages/ServicePages/GeneticCounselling";
+import MultispecialityOPD from "./pages/ServicePages/MultispecialityOPD";
 
 export default function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -65,6 +67,8 @@ export default function App() {
           <Route path="/services/nipt" element={<NIPT />} />
           <Route path="/services/pelvic-scan" element={<PelvicScan />} />
           <Route path="/services/follicular-study" element={<FollicularStudy />} />
+          <Route path="/services/genetic-counselling" element={<GeneticCounselling />} />
+          <Route path="/services/opd-services" element={<MultispecialityOPD />} />
         </Routes>
 
         <Footer />
