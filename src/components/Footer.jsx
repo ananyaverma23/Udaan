@@ -1,4 +1,5 @@
 import Container from "./Container";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -37,11 +38,10 @@ export default function Footer() {
             <h3 className="text-[18px] font-semibold mb-4">Quick Links</h3>
 
             <ul className="space-y-2 text-gray-300 text-[14px]">
-              <li className="hover:text-white cursor-pointer">About Us</li>
-              <li className="hover:text-white cursor-pointer">Services</li>
-              <li className="hover:text-white cursor-pointer">Treatment Process</li>
-              <li className="hover:text-white cursor-pointer">FAQ</li>
-              <li className="hover:text-white cursor-pointer">Contact</li>
+              <li><Link to="/about" className="hover:text-white">About Us</Link></li>
+              <li><Link to="/services/fertility-testing" className="hover:text-white">Services</Link></li>
+              <li><Link to="/faq" className="hover:text-white">FAQ</Link></li>
+              <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
             </ul>
           </div>
 
@@ -50,13 +50,13 @@ export default function Footer() {
             <h3 className="text-[18px] font-semibold mb-4">Services</h3>
 
             <ul className="space-y-2 text-gray-300 text-[14px]">
-              <li>Fertility Testing</li>
-              <li>IUI Treatment</li>
-              <li>IVF Treatment</li>
-              <li>Egg Freezing</li>
-              <li>Sperm Banking</li>
-              <li>Fetal Medicine Services</li>
-              <li>Genetic Counselling</li>
+              <li><Link to="/services/fertility-testing" className="hover:text-white">Fertility Testing</Link></li>
+              <li><Link to="/services/iui" className="hover:text-white">IUI Treatment</Link></li>
+              <li><Link to="/services/ivf" className="hover:text-white">IVF Treatment</Link></li>
+              <li><Link to="/services/egg-freezing" className="hover:text-white">Egg Freezing</Link></li>
+              <li><Link to="/services/sperm-banking" className="hover:text-white">Sperm Banking</Link></li>
+              <li><Link to="/services/nt-scan" className="hover:text-white">Fetal Medicine Services</Link></li>
+              <li><Link to="/services/genetic-counselling" className="hover:text-white">Genetic Counselling</Link></li>
             </ul>
           </div>
 

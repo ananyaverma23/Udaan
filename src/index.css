@@ -29,3 +29,25 @@ html, body, #root {
 .animate-dropdown {
   animation: dropdown 0.18s ease-out;
 }
+
+@media print {
+  /* Hide UI elements on print */
+  nav, footer, .print\:hidden, button {
+    display: none !important;
+  }
+
+  /* Reset layout for paper */
+  body {
+    background: white !important;
+    padding: 0 !important;
+  }
+  
+  @page {
+    margin: 15mm;
+  }
+}
+
+/* Hide scrollbar for the share menu if needed */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}

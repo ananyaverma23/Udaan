@@ -38,7 +38,12 @@ export default function Hero() {
           </div>
 
           {/* RIGHT */}
-          <div className="w-[360px] h-[260px] bg-white/10 border border-white/20 rounded-xl backdrop-blur-sm">
+          <div className="w-[400px] h-[280px] bg-white/10 mr-10 border border-white/20 rounded-lg backdrop-blur-sm">
+          <img 
+            src="https://images.unsplash.com/photo-1574637428470-7ede5332d44e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+            alt="clinic-img" 
+            className="w-full h-full object-cover rounded-lg"
+          />
           </div>
 
         </div>

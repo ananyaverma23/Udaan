@@ -30,7 +30,7 @@ export default function Contact() {
             <div className="w-full h-[250px] md:h-[350px] rounded-lg overflow-hidden">
               <iframe
                 title="map"
-                src="https://www.google.com/maps?q=Bardhaman,West%20Bengal&output=embed"
+                src="https://www.google.com/maps?q=70%20BC%20Rd%2C%20Khosbagan%2C%20Bardhaman%2C%20West%20Bengal%20713104&output=embed"
                 className="w-full h-full border-0"
                 loading="lazy"
               ></iframe>

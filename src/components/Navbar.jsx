@@ -113,6 +113,7 @@ export default function Navbar() {
             </div>
             <Link to="/about" className="hover:text-blue-600 transition">About Us</Link>
             <Link to="/doctors" className="hover:text-blue-600 transition">Our Doctors</Link>
+            <Link to="/gallery" className="hover:text-blue-600 transition">Gallery</Link>
             <Link to="/contact" className="hover:text-blue-600 transition">Contact</Link>
             
             {/* Redirects to the internal Appointment Page */}
@@ -206,6 +207,7 @@ export default function Navbar() {
 
             <Link to="/about" onClick={() => setIsOpen(false)} className={mobileTextStyle}>About Us</Link>
             <Link to="/doctors" onClick={() => setIsOpen(false)} className={mobileTextStyle}>Doctors</Link>
+            <Link to="/gallery" onClick={() => setIsOpen(false)} className={mobileTextStyle}>Gallery</Link>
             <Link to="/contact" onClick={() => setIsOpen(false)} className={mobileTextStyle}>Contact</Link>
             
             {/* Redirects to the internal Appointment Page */}
