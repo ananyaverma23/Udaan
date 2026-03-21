@@ -249,7 +249,7 @@ export default function EggFreezing() {
               </button>
 
               <a
-                href="https://wa.me/91XXXXXXXXXX?text=Hi%20Udaan%20Team%2C%20I%20would%20like%20more%20information%20about%20egg%20freezing."
+                href="https://wa.me/7866819192?text=Hi%20Udaan%20Team%2C%20I%20would%20like%20more%20information%20about%20egg%20freezing."
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 bg-white/20 px-3 py-2 rounded-md hover:bg-white/30 transition"
