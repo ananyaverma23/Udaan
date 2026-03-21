@@ -23,7 +23,7 @@ export default function Loader({ onFinished }) {
         }
         return prev + 1;
       });
-    }, 10);
+    }, 30);
     return () => clearInterval(interval);
   }, [onFinished]);
 
