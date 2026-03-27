@@ -118,7 +118,7 @@ export default function IVF() {
                 { title: "Transfer", desc: "A simple process where the selected embryo is placed in the uterus. No anesthesia is required." },
               ].map((step, i) => (
                 <div key={i} className="group bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-300 hover:shadow-lg transition-all">
-                  <div className="text-5xl font-black text-slate-100 group-hover:text-blue-50 transition-colors mb-2">{i + 1}</div>
+                  <div className="text-5xl font-black text-slate group-hover:text-red-100 transition-colors mb-2">{i + 1}</div>
                   <h4 className="font-bold text-blue-900 mb-3 flex items-center justify-between">
                     {step.title} <ChevronRight size={16} className="text-slate-300" />
                   </h4>
@@ -214,11 +214,11 @@ export default function IVF() {
             </Link>
           </div>
 
-          <div className="w-full md:w-auto flex justify-end mt-3 md:mt-0">
+          {/* <div className="w-full md:w-auto flex justify-end mt-3 md:mt-0">
             <button className="flex flex-col items-center justify-center gap-2 bg-white/10 hover:bg-white/20 p-7 rounded-3xl transition border border-white/10 md:ml-4 text-sm md:text-base">
               <Phone size={26} /> <span className="text-xs md:text-sm font-bold">CALL US</span>
             </button>
-          </div>
+          </div> */}
         </section>
 
       </div>

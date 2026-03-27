@@ -6,7 +6,7 @@ export default function Hero() {
     <div className="bg-gradient-to-r from-blue-700 to-purple-700 text-white">
       
       <Container>
-        <div className="flex items-center justify-between py-24">
+        <div className="flex items-center justify-between flex-col md:flex-row py-24 gap-8">
           
           {/* LEFT */}
           <div className="max-w-[520px]">
@@ -38,11 +38,11 @@ export default function Hero() {
           </div>
 
           {/* RIGHT */}
-          <div className="w-[400px] h-[280px] bg-white/10 mr-10 border border-white/20 rounded-lg backdrop-blur-sm">
+          <div className="w-full max-w-[400px] min-h-[180px] bg-white/10 md:mr-10 border border-white/20 rounded-lg backdrop-blur-sm flex justify-center items-center">
           <img 
             src="https://images.unsplash.com/photo-1574637428470-7ede5332d44e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
             alt="clinic-img" 
-            className="w-full h-full object-cover rounded-lg"
+            className="w-full h-48 sm:h-56 md:h-[280px] object-cover rounded-lg"
           />
           </div>
 

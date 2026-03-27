@@ -32,9 +32,8 @@ import GeneticCounselling from "./pages/ServicePages/GeneticCounselling";
 import MultispecialityOPD from "./pages/ServicePages/MultispecialityOPD";
 import Login from "./pages/Admin/Login";
 import Gallery from "./pages/Gallery";
-import GalleryDetail from "./pages/GalleryDetail";
-import AdminGallery from "./pages/Admin/AdminGallery";
-import CreatePost from "./pages/Admin/CreatePost"; 
+import GalleryDetail from "./pages/Admin/GalleryDetail";
+import CreatePost from "./pages/Admin/CreatePost";
 import EditPost from "./pages/Admin/EditPost";
 
 export default function App() {
@@ -80,10 +79,10 @@ export default function App() {
 
           <Route path="/admin" element={<Login />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/admin/gallery" element={<AdminGallery />} />
           <Route path="/gallery/:id" element={<GalleryDetail />} />
-          <Route path="/gallery/create" element={<CreatePost />} />
-          <Route path="/gallery/edit/:id" element={<EditPost />} />
+          <Route path="/admin/:id" element={<GalleryDetail />} />
+          <Route path="/admin/create" element={<CreatePost />} />
+          <Route path="/admin/edit/:id" element={<EditPost />} />
         </Routes>
 
         <Footer />

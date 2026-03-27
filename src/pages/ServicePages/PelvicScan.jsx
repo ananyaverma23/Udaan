@@ -69,32 +69,32 @@ export default function FemalePelvicScan() {
         ))}
       </section>
 
-      {/* VIDEO + INFO */}
-      <section className="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-2 gap-10 items-center">
-        
-        <iframe width="560" height="315" className="rounded-lg shadow-lg"
-            src="https://www.youtube.com/embed/2B1KRrid-b4?si=p0HzoiD8YdtI3DCN" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-        </iframe>
+      {/* VIDEO + INFO */}        
+        <div className="py-10 w-[80vw] md:w-[70vw] mx-auto">
+          <div className="relative w-full aspect-video rounded-[20px] md:rounded-[40px] overflow-hidden shadow-2xl bg-slate-900 border-4 md:border-8 border-white transition-all duration-300">
+            <iframe 
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/Bx-yK7ngSHQ?si=EMiSh3TgEuA3ObJu" 
+              title="YouTube video player" 
+              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe> 
+          </div>
+        </div>
 
         <div>
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+          <h2 className="text-2xl font-semibold text-blue-700 m-10 mb-4">
             What is a Pelvic Scan?
           </h2>
-          <p className="text-gray-600 mb-3">
+          <p className="text-gray-600 ml-10">
             A pelvic scan is an ultrasound that examines the uterus, ovaries,
             and surrounding structures to diagnose gynecological conditions.
           </p>
-          <p className="text-gray-600">
+          <p className="text-gray-600 ml-10 mb-6">
             It is commonly used for menstrual issues, pelvic pain, infertility,
             and early pregnancy evaluation.
           </p>
         </div>
-
-      </section>
 
       {/* TYPES */}
       <section className="bg-white py-10 px-4">
