@@ -36,7 +36,7 @@ export default function IUI() {
     <div className="bg-white pb-20 selection:bg-blue-100">
       
       {/* HERO SECTION */}
-      <section className="bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 text-white text-center py-20 px-4">
+      <section className="bg-gradient-to-br from-teal-600 via-[#0D9488] to-[#1E293B] text-white text-center py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <span className="bg-white/20 text-xs uppercase tracking-widest px-3 py-1 rounded-full mb-4 inline-block backdrop-blur-sm">
             Fertility Solutions
@@ -56,18 +56,18 @@ export default function IUI() {
           {/* INTRODUCTION */}
         <section className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-blue-900 text-3xl font-bold mb-4">Understanding IUI</h2>
+            <h2 className="text-slate-800 text-3xl font-bold mb-4">Understanding IUI</h2>
             <p className="text-slate-600 leading-relaxed text-lg">
               IUI is a specialized procedure where high-quality, processed sperm is placed directly into the uterus at the precise moment of ovulation. This bypasses the cervix and shortens the journey to the egg, significantly increasing the likelihood of fertilization.
             </p>
           </div>
           <div className="grid grid-cols-2 gap-4">
-            <div className="bg-white p-6 rounded-2xl shadow-sm border-b-4 border-blue-500">
+            <div className="bg-white p-6 rounded-2xl shadow-sm border-b-4 border-[#0D9488]">
               <p className="text-sm text-slate-500 uppercase font-bold mb-1">Success Rate</p>
               <p className="text-2xl font-bold text-slate-800">Up to 20%</p>
               <p className="text-xs text-slate-400">per cycle</p>
             </div>
-            <div className="bg-white p-6 rounded-2xl shadow-sm border-b-4 border-purple-500">
+            <div className="bg-white p-6 rounded-2xl shadow-sm border-b-4 border-[#D4AF37]">
               <p className="text-sm text-slate-500 uppercase font-bold mb-1">Duration</p>
               <p className="text-2xl font-bold text-slate-800">15-20 Min</p>
               <p className="text-xs text-slate-400">office visit</p>
@@ -105,12 +105,12 @@ export default function IUI() {
               </ul>
             </div>
 
-            <div className="bg-blue-50 p-8 rounded-2xl border border-blue-100 shadow-sm hover:shadow-md transition">
-              <h3 className="text-blue-600 font-bold mb-4 uppercase tracking-wider text-sm">IUI Advantage</h3>
+            <div className="bg-[#F0F7F4] p-8 rounded-2xl border border-[#F0F7F4] shadow-sm hover:shadow-md transition">
+              <h3 className="text-teal-600 font-bold mb-4 uppercase tracking-wider text-sm">IUI Advantage</h3>
               <ul className="space-y-4">
                 {["Direct placement bypasses cervical barriers", "Concentrated 'washed' sperm for higher quality", "Perfectly timed with your natural ovulation"].map((item, i) => (
                   <li key={i} className="flex gap-3 text-slate-700 text-sm font-medium">
-                    <CheckCircle2 size={18} className="text-blue-500 shrink-0" /> {item}
+                    <CheckCircle2 size={18} className="text-teal-600 shrink-0" /> {item}
                   </li>
                 ))}
               </ul>
@@ -123,10 +123,10 @@ export default function IUI() {
           <h2 className="text-3xl font-bold text-black mb-10">The IUI Process</h2>
           <div className="space-y-4">
             {[
-              { title: "Preparation & Monitoring", desc: "Initial tests and medications are used to stimulate egg growth and track ovulation.", color: "bg-blue-100/50", border: "border-blue-200", icon: <Calendar />, dot: "bg-blue-600" },
-              { title: "Sperm Collection & Washing", desc: "The sample is processed to isolate the most active, healthy sperm.", color: "bg-purple-100/50", border: "border-purple-200", icon: <FlaskConical />, dot: "bg-purple-600" },
-              { title: "The Procedure", desc: "A thin catheter gently places the sperm directly into the uterus.", color: "bg-blue-100/50", border: "border-blue-200", icon: <UserCheck />, dot: "bg-blue-600" },
-              { title: "Post-Procedure Care", desc: "A brief rest period followed by follow-up instructions.", color: "bg-purple-100/50", border: "border-purple-200", icon: <Activity />, dot: "bg-purple-600" }
+              { title: "Preparation & Monitoring", desc: "Initial tests and medications are used to stimulate egg growth and track ovulation.", color: "bg-[#F0F7F4]/50", border: "border-[#dbe3bc]", icon: <Calendar />, dot: "bg-teal-600" },
+              { title: "Sperm Collection & Washing", desc: "The sample is processed to isolate the most active, healthy sperm.", color: "bg-[#FBF4D4]/50", border: "border-[#f2d6d6]", icon: <FlaskConical />, dot: "bg-[#D4AF37]" },
+              { title: "The Procedure", desc: "A thin catheter gently places the sperm directly into the uterus.", color: "bg-[#F0F7F4]/50", border: "border-[#dbe3bc]", icon: <UserCheck />, dot: "bg-teal-600" },
+              { title: "Post-Procedure Care", desc: "A brief rest period followed by follow-up instructions.", color: "bg-[#FBF4D4]/50", border: "border-[#f2d6d6]", icon: <Activity />, dot: "bg-[#D4AF37]" }
             ].map((step, i) => (
               <div key={i} className={`${step.color} border ${step.border} p-8 rounded-[35px] flex flex-col md:flex-row items-center gap-6 group transition-all`}>
                 <div className={`w-12 h-12 ${step.dot} text-white rounded-2xl flex items-center justify-center font-bold text-xl shrink-0`}>
@@ -151,11 +151,11 @@ export default function IUI() {
             IUI is often the first line of treatment because it is less invasive and more cost-effective than IVF, particularly for non-tubal infertility issues.
           </p>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-10 bg-blue-100/50 rounded-[45px] border border-blue-200">
+            <div className="p-10 bg-[#F0F7F4]/50 rounded-[45px] border border-[#dbe3bc]">
               <h3 className="text-xl font-bold text-black mb-6 flex items-center gap-2">Common Indications</h3>
               <ul className="space-y-4 text-black font-semibold">
                 {["Unexplained infertility", "Cervical mucus issues", "Mild male factor infertility", "Requirement for donor sperm"].map((t, i) => (
-                  <li key={i} className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-blue-600 rounded-full" /> {t}</li>
+                  <li key={i} className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-teal-600 rounded-full" /> {t}</li>
                 ))}
               </ul>
             </div>
@@ -190,18 +190,18 @@ export default function IUI() {
 
         {/* 7. AFTER THE PROCEDURE */}
         <section className="py-16">
-          <div className="bg-blue-100/40 border border-blue-200 rounded-[45px] p-10 md:p-14 flex flex-col md:flex-row items-center gap-12">
+          <div className="bg-blue-100/40 border border-[#dbe3bc] rounded-[45px] p-10 md:p-14 flex flex-col md:flex-row items-center gap-12">
             <div className="flex-1 space-y-6">
               <h2 className="text-3xl font-extrabold text-black">After the Procedure</h2>
               <p className="text-black text-lg leading-relaxed font-semibold">
                 You will rest for 15-20 minutes in the clinic. Afterward, you can resume your normal daily activities immediately.
               </p>
-              <div className="flex items-center gap-3 text-blue-700 font-bold bg-white/50 w-fit px-4 py-2 rounded-xl">
+              <div className="flex items-center gap-3 text-teal-600 font-bold bg-white/50 w-fit px-4 py-2 rounded-xl">
                 <Clock size={20} /> Recovery: 15–20 Mins
               </div>
             </div>
             <div className="hidden md:block bg-white p-10 rounded-[40px] shadow-xl shadow-blue-200/50">
-              <Stethoscope size={60} className="text-blue-600" />
+              <Stethoscope size={60} className="text-teal-600" />
             </div>
           </div>
         </section>
@@ -219,7 +219,7 @@ export default function IUI() {
             {successRates.map((stat, i) => (
               <div key={i} className="p-8 border border-slate-200 rounded-[40px] text-center bg-white shadow-sm">
                 <p className="text-slate-400 text-[10px] font-bold uppercase mb-2 tracking-widest">{stat.age}</p>
-                <p className="text-4xl font-black text-blue-600">{stat.rate}</p>
+                <p className="text-4xl font-black text-teal-600">{stat.rate}</p>
               </div>
             ))}
           </div>
@@ -227,13 +227,13 @@ export default function IUI() {
           {/* NEW: SUCCESS RATE FACTORS DIV */}
           <div className="bg-slate-50 rounded-[45px] p-10 md:p-14 border border-slate-200">
             <h3 className="text-2xl font-bold text-black mb-8 flex items-center gap-2">
-              <Zap className="text-blue-600" size={24} /> Factors Influencing Success
+              <Zap className="text-teal-600" size={24} /> Factors Influencing Success
             </h3>
             <div className="grid md:grid-cols-2 gap-8">
               {successFactors.map((factor, i) => (
                 <div key={i} className="flex gap-4">
                   <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center shrink-0">
-                    <CheckCircle2 className="text-blue-600" size={20} />
+                    <CheckCircle2 className="text-teal-600" size={20} />
                   </div>
                   <div>
                     <h4 className="font-bold text-black mb-1">{factor.title}</h4>
@@ -246,7 +246,7 @@ export default function IUI() {
         </section>
 
         {/* 9. IUI VS IVF */}
-        <section className="py-16 bg-blue-600 rounded-[50px] p-10 md:p-16 text-white flex flex-col md:flex-row items-center gap-10">
+        <section className="py-16 bg-teal-600 rounded-[50px] p-10 md:p-16 text-white flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1">
             <h2 className="text-3xl font-bold mb-4">IUI vs. IVF</h2>
             <p className="text-blue-50 leading-relaxed font-medium">
@@ -260,7 +260,7 @@ export default function IUI() {
           <h2 className="text-4xl font-black text-black tracking-tight">Ready to learn more about IUI?</h2>
           <p className="text-slate-500 max-w-xl mx-auto font-medium">Our specialists are here to guide you through every step of your fertility journey.</p>
           <Link to="/appointment" 
-            className="inline-flex items-center gap-3 bg-blue-600 text-white px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-blue-200">
+            className="inline-flex items-center gap-3 bg-teal-600 text-white px-12 py-5 rounded-full font-bold text-lg hover:scale-105 transition-all shadow-xl shadow-blue-200">
             <MessageCircle size={22} /> Consult via WhatsApp
           </Link>
         </section>
@@ -269,3 +269,6 @@ export default function IUI() {
     </div>
   );
 }
+
+
+

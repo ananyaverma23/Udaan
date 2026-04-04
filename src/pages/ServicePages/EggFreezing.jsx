@@ -33,7 +33,7 @@ export default function EggFreezing() {
 
   const reasons = [
     {
-      icon: <Clock className="text-purple-600" />,
+      icon: <Clock className="text-[#D4AF37]" />,
       title: "Delay Parenthood",
       desc: "Preserve fertility while focusing on career or personal goals.",
     },
@@ -43,7 +43,7 @@ export default function EggFreezing() {
       desc: "Protect fertility before treatments like chemotherapy or surgery.",
     },
     {
-      icon: <Snowflake className="text-blue-600" />,
+      icon: <Snowflake className="text-teal-600" />,
       title: "Fertility Preservation",
       desc: "Store healthy eggs for future family planning.",
     },
@@ -53,7 +53,7 @@ export default function EggFreezing() {
     <div className="bg-gray-50 w-full">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-16 px-4">
+      <section className="bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white text-center py-16 px-4">
         <h1 className="text-3xl md:text-5xl font-bold mb-3">
           Egg Freezing
         </h1>
@@ -114,10 +114,10 @@ export default function EggFreezing() {
             {processSteps.map((step, i) => (
               <div key={i} className="bg-white p-5 rounded-xl shadow-sm border w-full max-w-full">
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full font-semibold">
+                  <div className="w-8 h-8 flex items-center justify-center bg-blue-100 text-teal-600 rounded-full font-semibold">
                     {i + 1}
                   </div>
-                  <p className="font-semibold text-blue-600">{step.title}</p>
+                  <p className="font-semibold text-teal-600">{step.title}</p>
                 </div>
                 <p className="text-sm text-gray-600">{step.desc}</p>
               </div>
@@ -136,7 +136,7 @@ export default function EggFreezing() {
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-blue-50 p-5 rounded-xl">
+            <div className="bg-[#F0F7F4] p-5 rounded-xl">
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• Preserves younger, healthier eggs</li>
                 <li>• Provides reproductive flexibility</li>
@@ -144,7 +144,7 @@ export default function EggFreezing() {
               </ul>
             </div>
 
-            <div className="bg-purple-50 p-5 rounded-xl">
+            <div className="bg-[#FBF4D4] p-5 rounded-xl">
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• Useful before medical treatments</li>
                 <li>• Supports family planning decisions</li>
@@ -201,14 +201,14 @@ export default function EggFreezing() {
               <div key={i}>
                 <div className="flex justify-between text-sm mb-1">
                   <span>{item.label}</span>
-                  <span className="text-blue-600 font-medium">
+                  <span className="text-teal-600 font-medium">
                     {item.value}%
                   </span>
                 </div>
 
                 <div className="h-2 bg-gray-200 rounded-full">
                   <div
-                    className="h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
+                    className="h-2 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#0D9488]"
                     style={{ width: `${item.value}%` }}
                   ></div>
                 </div>
@@ -219,7 +219,7 @@ export default function EggFreezing() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-2xl flex flex-col md:flex-row justify-between gap-6 items-center">
+        <section className="bg-gradient-to-r from-teal-600 to-teal-500 text-white p-8 rounded-2xl flex flex-col md:flex-row justify-between gap-6 items-center">
 
           <div>
             <h2 className="text-2xl font-semibold mb-2">
@@ -230,7 +230,7 @@ export default function EggFreezing() {
             </p>
 
             <Link to="/appointment">
-              <button className="bg-white text-black px-6 py-2 rounded-full font-medium transition hover:bg-blue-600 hover:text-white hover:shadow-lg">
+              <button className="bg-white text-black px-6 py-2 rounded-full font-medium transition hover:bg-teal-600 hover:text-white hover:shadow-lg">
                 Book Consultation
               </button>
             </Link>
@@ -265,3 +265,6 @@ export default function EggFreezing() {
     </div>
   );
 }
+
+
+

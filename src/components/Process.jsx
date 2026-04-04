@@ -29,7 +29,7 @@ export default function Process() {
       <Container>
 
         {/* TITLE */}
-        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-blue-600 mb-12 md:mb-16">
+        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-teal-600 mb-12 md:mb-16">
           Treatment Process
         </h2>
 
@@ -40,12 +40,12 @@ export default function Process() {
             <div key={i} className="flex flex-col items-center">
 
               {/* CIRCLE */}
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-blue-600 text-white flex items-center justify-center text-[18px] md:text-[20px] font-semibold mb-4">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-full bg-teal-600 text-white flex items-center justify-center text-[18px] md:text-[20px] font-semibold mb-4">
                 {step.number}
               </div>
 
               {/* TITLE */}
-              <h3 className="text-[18px] md:text-[20px] font-semibold text-purple-600 mb-2">
+              <h3 className="text-[18px] md:text-[20px] font-semibold text-[#D4AF37] mb-2">
                 {step.title}
               </h3>
 
@@ -63,3 +63,5 @@ export default function Process() {
     </div>
   );
 }
+
+

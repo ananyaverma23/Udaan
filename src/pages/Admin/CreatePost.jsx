@@ -49,7 +49,7 @@ export default function CreatePost() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 via-white to-blue-100 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FCE9E9] via-white to-[#FBF6F6] px-4">
       
       {/* Card */}
       <div className="w-full max-w-screen bg-white/80 backdrop-blur-xl border border-white/40 rounded-2xl shadow-xl p-8 m-8">
@@ -64,7 +64,7 @@ export default function CreatePost() {
 
         {/* Heading */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-[#D4AF37] to-[#1E293B] bg-clip-text text-transparent">
             Create New Post
           </h1>
           <p className="text-sm text-gray-500 mt-1">
@@ -134,7 +134,7 @@ export default function CreatePost() {
         {/* Button */}
         <button
           onClick={handleSubmit}
-          className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-2 rounded-lg shadow-md hover:scale-[1.02] active:scale-[0.98] transition"
+          className="w-full bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white py-2 rounded-lg shadow-md hover:scale-[1.02] active:scale-[0.98] transition"
         >
           Create Post
         </button>
@@ -142,3 +142,6 @@ export default function CreatePost() {
     </div>
   );
 }
+
+
+

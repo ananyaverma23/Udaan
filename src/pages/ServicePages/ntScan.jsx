@@ -38,7 +38,7 @@ export default function NtScan() {
     <div className="w-full bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-12 px-4 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-12 px-4 text-center">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Nuchal Translucency (NT) Scan
@@ -53,7 +53,7 @@ export default function NtScan() {
 
       {/* INTRO */}
       <section className="max-w-6xl mx-auto px-4 py-10">
-        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-4">
           What is an NT Scan?
         </h2>
         <p className="text-gray-600 leading-relaxed mb-4">
@@ -88,7 +88,7 @@ export default function NtScan() {
       {/* WHAT IT DETECTS */}
       <section className="bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl font-semibold text-blue-700 mb-4 flex items-center gap-2">
+          <h2 className="text-xl font-semibold text-teal-600 mb-4 flex items-center gap-2">
             <FaHeartbeat /> What NT Scan Can Indicate
           </h2>
 
@@ -119,7 +119,7 @@ export default function NtScan() {
       {/* NT VALUES */}
       <section className="bg-gray-100 py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-6">
             Understanding NT Measurements
           </h2>
 
@@ -157,13 +157,13 @@ export default function NtScan() {
         <section className="py-14 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
 
-            <h2 className="text-2xl md:text-3xl font-semibold text-center text-blue-700 mb-10">
+            <h2 className="text-2xl md:text-3xl font-semibold text-center text-teal-600 mb-10">
             NT Scan Process
             </h2>
 
             {/* Scroll container for mobile */}
             <div className="relative">
-              <div className="hidden md:block absolute top-14 left-8 right-8 h-1 bg-gradient-to-r from-blue-500 to-violet-500 opacity-70 -z-10" />
+              <div className="hidden md:block absolute top-14 left-8 right-8 h-1 bg-gradient-to-r from-[#D4AF37] to-[#0D9488] opacity-70 -z-10" />
 
               <div className="flex md:grid md:grid-cols-5 gap-6 overflow-x-auto md:overflow-visible pb-4 pt-8 md:pt-0">
                 {[
@@ -194,17 +194,17 @@ export default function NtScan() {
                   >
                     {/* Connector line */}
                     {i !== 4 && (
-                        <div className="hidden md:block absolute top-4 right-[-110px] w-55 h-1 bg-gradient-to-r from-blue-500 to-violet-500" />
+                        <div className="hidden md:block absolute top-4 right-[-110px] w-55 h-1 bg-gradient-to-r from-[#D4AF37] to-[#0D9488]" />
                     )}
 
                     {/* Step circle */}
-                    <div className="relative z-20 w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 text-white flex items-center justify-center font-bold shadow-lg mb-4">
+                    <div className="relative z-20 w-12 h-12 rounded-full bg-gradient-to-r from-teal-600 to-[#1E293B] text-white flex items-center justify-center font-bold shadow-lg mb-4">
                       {i + 1}
                     </div>
 
                     {/* Card */}
                     <div className="bg-gray-50 p-5 rounded-xl shadow hover:shadow-lg transition w-full h-full flex flex-col justify-between">
-                      <h3 className="text-blue-700 font-semibold mb-2">
+                      <h3 className="text-teal-600 font-semibold mb-2">
                         {step.title}
                       </h3>
                       <p className="text-gray-600 text-sm flex-grow">
@@ -224,7 +224,7 @@ export default function NtScan() {
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
 
           <div>
-            <h3 className="text-blue-700 font-semibold mb-3">
+            <h3 className="text-teal-600 font-semibold mb-3">
               During the Scan
             </h3>
             <ul className="list-disc pl-5 text-gray-600 space-y-2">
@@ -277,7 +277,7 @@ export default function NtScan() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-10 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-10 text-center">
         <FaBaby className="mx-auto text-4xl mb-4" />
         <h2 className="text-2xl font-semibold mb-3">
           Book Your NT Scan Today
@@ -286,7 +286,7 @@ export default function NtScan() {
           Early screening helps you stay informed and confident throughout your pregnancy journey.
         </p>
         <Link to="/appointment">
-            <button className="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+            <button className="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
                 Book Appointment
             </button>
         </Link>
@@ -295,3 +295,5 @@ export default function NtScan() {
     </div>
   );
 }
+
+

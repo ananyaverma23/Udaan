@@ -7,7 +7,7 @@ export default function NutritionalGuidance() {
     <div className="bg-gray-50 w-full">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-16 px-4">
+      <section className="bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white text-center py-16 px-4">
         <h1 className="text-3xl md:text-5xl font-bold mb-3">
           Nutritional Guidance
         </h1>
@@ -41,16 +41,16 @@ export default function NutritionalGuidance() {
 
           <div className="grid md:grid-cols-3 gap-6">
 
-            <div className="bg-blue-50 p-5 rounded-xl">
-              <Apple className="text-blue-600 mb-3" />
+            <div className="bg-[#F0F7F4] p-5 rounded-xl">
+              <Apple className="text-teal-600 mb-3" />
               <p className="font-semibold mb-2">Folic Acid</p>
               <p className="text-sm text-gray-600">
                 Supports healthy egg development and reduces risk of birth defects.
               </p>
             </div>
 
-            <div className="bg-purple-50 p-5 rounded-xl">
-              <HeartPulse className="text-purple-600 mb-3" />
+            <div className="bg-[#FBF4D4] p-5 rounded-xl">
+              <HeartPulse className="text-[#D4AF37] mb-3" />
               <p className="font-semibold mb-2">Iron</p>
               <p className="text-sm text-gray-600">
                 Improves ovulation and supports healthy blood flow.
@@ -105,7 +105,7 @@ export default function NutritionalGuidance() {
             Healthy Lifestyle Tips
           </h2>
 
-          <div className="bg-blue-50 p-5 rounded-xl">
+          <div className="bg-[#F0F7F4] p-5 rounded-xl">
             <ul className="text-sm text-gray-700 space-y-2">
               <li>• Maintain a healthy weight</li>
               <li>• Stay physically active</li>
@@ -127,7 +127,7 @@ export default function NutritionalGuidance() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-2xl flex flex-col md:flex-row justify-between gap-6 items-center">
+        <section className="bg-gradient-to-r from-teal-600 to-teal-500 text-white p-8 rounded-2xl flex flex-col md:flex-row justify-between gap-6 items-center">
 
           <div>
             <h2 className="text-2xl font-semibold mb-2">
@@ -138,7 +138,7 @@ export default function NutritionalGuidance() {
             </p>
 
             <Link to="/appointment">
-              <button className="bg-white text-black px-6 py-2 rounded-full font-medium transition hover:bg-blue-600 hover:text-white hover:shadow-lg">
+              <button className="bg-white text-black px-6 py-2 rounded-full font-medium transition hover:bg-teal-600 hover:text-white hover:shadow-lg">
                 Book Consultation
               </button>
             </Link>
@@ -172,3 +172,6 @@ export default function NutritionalGuidance() {
     </div>
   );
 }
+
+
+

@@ -38,7 +38,7 @@ export default function MultiplePregnancy() {
     <div className="w-full bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-12 px-4 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-12 px-4 text-center">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Multiple Pregnancy Care
@@ -52,7 +52,7 @@ export default function MultiplePregnancy() {
 
       {/* INTRO */}
       <section className="max-w-6xl mx-auto px-4 py-10">
-        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-4">
           What is a Multiple Pregnancy?
         </h2>
         <p className="text-gray-600 mb-4">
@@ -69,7 +69,7 @@ export default function MultiplePregnancy() {
       <section className="bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-6">
             Types of Multiple Pregnancy
           </h2>
 
@@ -110,7 +110,7 @@ export default function MultiplePregnancy() {
       <section className="bg-gray-100 py-10 px-4">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-6">
             Monitoring During Multiple Pregnancy
           </h2>
 
@@ -159,7 +159,7 @@ export default function MultiplePregnancy() {
       <section className="bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-6">
             Care Tips for Multiple Pregnancy
           </h2>
 
@@ -202,7 +202,7 @@ export default function MultiplePregnancy() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-10 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-10 text-center">
         <FaBaby className="mx-auto text-4xl mb-4" />
         <h2 className="text-2xl font-semibold mb-3">
           Get Expert Care for Multiple Pregnancy
@@ -211,7 +211,7 @@ export default function MultiplePregnancy() {
           Ensure the best care for you and your babies with regular monitoring.
         </p>
         <Link to="/appointment">
-          <button className="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+          <button className="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
             Book Consultation
           </button>
         </Link>
@@ -220,3 +220,5 @@ export default function MultiplePregnancy() {
     </div>
   );
 }
+
+

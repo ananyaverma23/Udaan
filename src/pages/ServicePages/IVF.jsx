@@ -7,17 +7,17 @@ import { Link } from "react-router-dom";
 
 export default function IVF() {
   const successData = [
-    { age: "Under 35", rate: 54, color: "bg-emerald-500" },
-    { age: "35 - 37", rate: 42, color: "bg-blue-500" },
+    { age: "Under 35", rate: 54, color: "bg-teal-500" },
+    { age: "35 - 37", rate: 42, color: "bg-[#F0F7F4]0" },
     { age: "38 - 40", rate: 26, color: "bg-indigo-500" },
-    { age: "Over 40", rate: 12, color: "bg-purple-500" },
+    { age: "Over 40", rate: 12, color: "bg-[#FBF4D4]0" },
   ];
 
   return (
     <div className="bg-slate-50 w-full font-sans antialiased text-slate-800">
       
       {/* HERO SECTION */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-indigo-600 to-purple-700 text-white text-center py-20 px-4">
+      <section className="relative overflow-hidden bg-gradient-to-br from-teal-600 via-[#0D9488] to-[#1E293B] text-white text-center py-20 px-4">
         <div className="max-w-4xl mx-auto relative z-10">
           <span className="inline-block px-4 py-1 mb-4 text-xs font-bold tracking-widest uppercase bg-white/20 backdrop-blur-md rounded-full">
             Advanced Reproductive Technology
@@ -54,15 +54,15 @@ export default function IVF() {
             <h4 className="font-bold text-slate-900 mb-4 uppercase text-xs tracking-wider">Quick Key Stats</h4>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-blue-50 rounded-xl text-blue-600"><Microscope size={24} /></div>
+                <div className="p-3 bg-[#F0F7F4] rounded-xl text-teal-600"><Microscope size={24} /></div>
                 <div><p className="text-sm text-slate-500">Lab Precision</p><p className="font-bold uppercase text-xs">High Control</p></div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-purple-50 rounded-xl text-purple-600"><Syringe size={24} /></div>
+                <div className="p-3 bg-[#FBF4D4] rounded-xl text-[#D4AF37]"><Syringe size={24} /></div>
                 <div><p className="text-sm text-slate-500">Cycle Length</p><p className="font-bold uppercase text-xs">4 - 6 Weeks</p></div>
               </div>
               <div className="flex items-center gap-4">
-                <div className="p-3 bg-emerald-50 rounded-xl text-emerald-600"><ClipboardCheck size={24} /></div>
+                <div className="p-3 bg-teal-50 rounded-xl text-teal-600"><ClipboardCheck size={24} /></div>
                 <div><p className="text-sm text-slate-500">Genetic Screening</p><p className="font-bold uppercase text-xs">Optional (PGT-A)</p></div>
               </div>
             </div>
@@ -89,7 +89,7 @@ export default function IVF() {
               </ul>
             </div>
             <div className="bg-white p-8">
-              <h3 className="text-blue-600 font-bold mb-6 text-center uppercase tracking-tighter underline underline-offset-8">IVF Protocol</h3>
+              <h3 className="text-teal-600 font-bold mb-6 text-center uppercase tracking-tighter underline underline-offset-8">IVF Protocol</h3>
               <ul className="space-y-5">
                 {[
                   "Bypasses fallopian tubes entirely",
@@ -119,7 +119,7 @@ export default function IVF() {
               ].map((step, i) => (
                 <div key={i} className="group bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:border-blue-300 hover:shadow-lg transition-all">
                   <div className="text-5xl font-black text-slate group-hover:text-red-100 transition-colors mb-2">{i + 1}</div>
-                  <h4 className="font-bold text-blue-900 mb-3 flex items-center justify-between">
+                  <h4 className="font-bold text-slate-800 mb-3 flex items-center justify-between">
                     {step.title} <ChevronRight size={16} className="text-slate-300" />
                   </h4>
                   <p className="text-sm text-slate-500 leading-relaxed">{step.desc}</p>
@@ -187,15 +187,15 @@ export default function IVF() {
             <h2 className="text-2xl font-bold mb-6">Patient Recommendations</h2>
             <ul className="space-y-5 text-sm">
               <li className="flex gap-4">
-                <div className="h-6 w-6 rounded-full bg-blue-500/30 flex items-center justify-center shrink-0">1</div>
+                <div className="h-6 w-6 rounded-full bg-[#F0F7F4]0/30 flex items-center justify-center shrink-0">1</div>
                 <p><span className="font-bold block">Physical Rest</span> No high-impact cardio or heavy lifting for 48 hours post-transfer.</p>
               </li>
               <li className="flex gap-4">
-                <div className="h-6 w-6 rounded-full bg-blue-500/30 flex items-center justify-center shrink-0">2</div>
+                <div className="h-6 w-6 rounded-full bg-[#F0F7F4]0/30 flex items-center justify-center shrink-0">2</div>
                 <p><span className="font-bold block">Hydration</span> Maintain high fluid intake to support the uterine lining and recovery.</p>
               </li>
               <li className="flex gap-4">
-                <div className="h-6 w-6 rounded-full bg-blue-500/30 flex items-center justify-center shrink-0">3</div>
+                <div className="h-6 w-6 rounded-full bg-[#F0F7F4]0/30 flex items-center justify-center shrink-0">3</div>
                 <p><span className="font-bold block">Support</span> Lean on our counseling services during the "Two Week Wait" (2WW).</p>
               </li>
             </ul>
@@ -203,7 +203,7 @@ export default function IVF() {
         </section>
 
         {/* CTA SECTION */}
-        <section className="bg-gradient-to-r from-blue-700 to-indigo-800 text-white p-10 rounded-[2.5rem] flex flex-col md:flex-row justify-between gap-10 items-center shadow-2xl">
+        <section className="bg-gradient-to-r from-[#1E293B] to-[#0D9488] text-white p-10 rounded-[2.5rem] flex flex-col md:flex-row justify-between gap-10 items-center shadow-2xl">
           <div className="max-w-lg text-center md:text-left">
             <h2 className="text-3xl font-bold mb-4">Taking the Next Step?</h2>
             <p className="text-blue-100 mb-8 opacity-80">
@@ -225,3 +225,6 @@ export default function IVF() {
     </div>
   );
 }
+
+
+

@@ -7,7 +7,7 @@ export default function Stats() {
         <div className="text-center py-8">
           
           {/* NUMBER */}
-          <p className="text-[32px] md:text-[36px] font-bold text-blue-600">
+          <p className="text-[32px] md:text-[36px] font-bold text-teal-600">
             24/7
           </p>
 
@@ -21,3 +21,5 @@ export default function Stats() {
     </div>
   );
 }
+
+

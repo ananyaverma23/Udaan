@@ -5,14 +5,14 @@ export default function Appointment() {
   const whatsappUrl = "https://wa.me/7866819192?text=Hi Udaan, I want to book an appointment.";
 
   return (
-    <div className="py-20 bg-blue-50/30 min-h-[70vh] flex items-center">
+    <div className="py-20 bg-[#F0F7F4]/30 min-h-[70vh] flex items-center">
       <Container>
         <div className="max-w-2xl mx-auto bg-white rounded-3xl p-8 sm:p-12 shadow-xl shadow-blue-100 text-center border border-blue-50">
           <div className="w-20 h-20 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-6">
             <MessageCircle size={40} />
           </div>
           
-          <h2 className="text-3xl font-bold text-blue-900 mb-4 tracking-tight">
+          <h2 className="text-3xl font-bold text-slate-800 mb-4 tracking-tight">
             Book via WhatsApp
           </h2>
           <p className="text-gray-600 mb-8 leading-relaxed">
@@ -46,3 +46,5 @@ export default function Appointment() {
     </div>
   );
 }
+
+

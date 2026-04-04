@@ -6,7 +6,7 @@ export default function Services() {
       <Container>
 
         {/* TITLE */}
-        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-blue-600 mb-10 md:mb-14">
+        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-teal-600 mb-10 md:mb-14">
           Our Services
         </h2>
 
@@ -18,7 +18,7 @@ export default function Services() {
 
             {/* Fertility Testing */}
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition">
-              <h3 className="text-purple-600 text-[20px] font-semibold mb-4">
+              <h3 className="text-[#D4AF37] text-[20px] font-semibold mb-4">
                 Fertility Testing
               </h3>
 
@@ -39,7 +39,7 @@ export default function Services() {
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition flex-1">
 
               {/* Additional */}
-              <h3 className="text-purple-600 text-[20px] font-semibold mb-3">
+              <h3 className="text-[#D4AF37] text-[20px] font-semibold mb-3">
                 Additional Fertility Services
               </h3>
 
@@ -50,7 +50,7 @@ export default function Services() {
               </ul>
 
               {/* Fetal */}
-              <h3 className="text-purple-600 text-[20px] font-semibold mb-2">
+              <h3 className="text-[#D4AF37] text-[20px] font-semibold mb-2">
                 Fetal Medicine Services
               </h3>
 
@@ -62,7 +62,7 @@ export default function Services() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
 
                 <div className="bg-gray-50 p-4 rounded-xl">
-                  <h4 className="text-blue-600 font-semibold mb-2">
+                  <h4 className="text-teal-600 font-semibold mb-2">
                     A. Obstetric Scans
                   </h4>
                   <ul className="text-gray-600 text-[14px] space-y-1">
@@ -73,7 +73,7 @@ export default function Services() {
                 </div>
 
                 <div className="bg-gray-50 p-4 rounded-xl">
-                  <h4 className="text-blue-600 font-semibold mb-2">
+                  <h4 className="text-teal-600 font-semibold mb-2">
                     B. Interventional Procedures
                   </h4>
                   <ul className="text-gray-600 text-[14px] space-y-1">
@@ -96,7 +96,7 @@ export default function Services() {
             {/* CARD 1: IUI + IVF */}
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition">
 
-              <h3 className="text-purple-600 text-[20px] font-semibold mb-3">
+              <h3 className="text-[#D4AF37] text-[20px] font-semibold mb-3">
                 IUI Treatment
               </h3>
 
@@ -104,7 +104,7 @@ export default function Services() {
                 We have facilities for both Husband and Donor sperm IUI.
               </p>
 
-              <h3 className="text-purple-600 text-[20px] font-semibold mb-3">
+              <h3 className="text-[#D4AF37] text-[20px] font-semibold mb-3">
                 IVF Treatment
               </h3>
 
@@ -124,7 +124,7 @@ export default function Services() {
             {/* CARD 2: Genetic + OPD */}
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-md hover:shadow-xl transition flex-1">
 
-              <h3 className="text-purple-600 text-[20px] font-semibold mb-3">
+              <h3 className="text-[#D4AF37] text-[20px] font-semibold mb-3">
                 Genetic Counselling
               </h3>
 
@@ -132,7 +132,7 @@ export default function Services() {
                 Dedicated & experienced geneticists to evaluate, diagnose and manage patients with genetic disorders.
               </p>
 
-              <h3 className="text-purple-600 text-[20px] font-semibold mb-3">
+              <h3 className="text-[#D4AF37] text-[20px] font-semibold mb-3">
                 Multispeciality OPD Services
               </h3>
 
@@ -140,7 +140,7 @@ export default function Services() {
                 Team of physicians, nutritionists, surgeons & pediatricians to guide your journey.
               </p>
 
-              <h3 className="text-purple-600 text-[20px] font-semibold mb-2">
+              <h3 className="text-[#D4AF37] text-[20px] font-semibold mb-2">
                 General Ultrasound & Doppler Tests
               </h3>
 
@@ -157,3 +157,5 @@ export default function Services() {
     </div>
   );
 }
+
+

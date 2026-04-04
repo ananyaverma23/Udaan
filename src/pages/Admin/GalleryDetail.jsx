@@ -24,8 +24,8 @@ export default function GalleryDetail() {
   if (!post) return <p className="p-6">Post not found</p>;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-6">
-      <Link to="/gallery" className="mb-4 inline-block text-blue-600">
+    <div className="min-h-screen bg-gradient-to-br from-[#F0F7F4] to-[#FBF6F6] p-6">
+      <Link to="/gallery" className="mb-4 inline-block text-teal-600">
         Back
       </Link>
 
@@ -47,7 +47,7 @@ export default function GalleryDetail() {
             <div className="mt-4 flex justify-between">
               <button
                 onClick={() => navigate(`/admin/edit/${post.id}`)}
-                className="text-sm text-blue-600"
+                className="text-sm text-teal-600"
               >
                 Edit
               </button>
@@ -65,3 +65,6 @@ export default function GalleryDetail() {
     </div>
   );
 }
+
+
+

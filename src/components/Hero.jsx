@@ -3,47 +3,56 @@ import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <div className="bg-gradient-to-r from-blue-700 to-purple-700 text-white">
+    <div 
+      className="relative text-white overflow-hidden"
+      style={{
+        backgroundImage: "url(/Animation (3).mp4)",
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+      }}
+    >
+      {/* Background Video */}
+      <video 
+        src="/Animation (3).mp4" 
+        autoPlay 
+        loop 
+        muted
+        className="absolute inset-0 w-full h-full object-cover -z-10"
+      />
+      
+      {/* Dark Overlay to hide watermark and darken background */}
+      <div className="absolute inset-0 bg-black/40 -z-10" />
       
       <Container>
-        <div className="flex items-center justify-between flex-col md:flex-row py-24 gap-8">
+        <div className="flex items-center justify-center py-12 sm:py-16 md:py-28 lg:py-30">
           
-          {/* LEFT */}
-          <div className="max-w-[520px]">
+          {/* CENTER CONTENT */}
+          <div className="max-w-[90%] sm:max-w-[600px] md:max-w-[700px] lg:max-w-[800px] text-center px-4 sm:px-6">
             
-            <h1 className="text-[52px] font-extrabold leading-[1.15] mb-6">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold leading-[1.15] mb-4 sm:mb-6">
               Your Journey to Parenthood Starts Here
             </h1>
 
-            <p className="text-[15px] text-white/90 leading-relaxed mb-8">
+            <p className="text-sm sm:text-base md:text-lg text-white/95 leading-relaxed mb-6 sm:mb-8">
               1st Dedicated Fetal Medicine & Fertility Clinic in Purba Barddhaman. 
               Advanced fertility & fetal medicine treatments with personalized care 
               and expert guidance. State-of-the-art facilities and experienced 
               specialists dedicated to helping you achieve your dream of parenthood.
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/appointment">
-                <button className="bg-white text-blue-700 px-6 py-3 rounded-full text-sm font-semibold">
+                <button className="w-full sm:w-auto bg-white text-teal-600 px-6 py-3 rounded-full text-xs sm:text-sm font-semibold hover:bg-gray-100 transition">
                   Book Consultation
                 </button>
               </Link>
 
               <Link to="/about">
-                <button className="border border-white px-6 py-3 rounded-full text-sm font-medium">
+                <button className="w-full sm:w-auto border border-white px-6 py-3 rounded-full text-xs sm:text-sm font-medium hover:bg-white/10 transition">
                   Learn More
                 </button>
               </Link>
             </div>
-          </div>
-
-          {/* RIGHT */}
-          <div className="w-full max-w-[400px] min-h-[180px] bg-white/10 md:mr-10 border border-white/20 rounded-lg backdrop-blur-sm flex justify-center items-center">
-          <img 
-            src="https://images.unsplash.com/photo-1574637428470-7ede5332d44e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-            alt="clinic-img" 
-            className="w-full h-48 sm:h-56 md:h-[280px] object-cover rounded-lg"
-          />
           </div>
 
         </div>
@@ -51,3 +60,4 @@ export default function Hero() {
     </div>
   );
 }
+

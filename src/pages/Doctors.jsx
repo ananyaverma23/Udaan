@@ -63,7 +63,7 @@ export default function Doctors() {
     <div className="bg-[#f6f8fc]">
 
       {/* HERO */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-14 md:py-20">
+      <div className="bg-gradient-to-r from-teal-600 to-teal-500 text-white py-14 md:py-20">
         <Container>
           <div className="text-center max-w-3xl mx-auto">
 
@@ -96,8 +96,8 @@ export default function Doctors() {
                 className={`px-4 py-2 rounded-full text-sm border transition
                   ${
                     active === cat
-                      ? "bg-blue-600 text-white border-blue-600"
-                      : "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                      ? "bg-teal-600 text-white border-teal-600"
+                      : "border-teal-600 text-teal-600 hover:bg-teal-600 hover:text-white"
                   }`}
               >
                 {cat}
@@ -148,7 +148,7 @@ export default function Doctors() {
 
                   {/* HOVER BUTTON */}
                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
-                    <button className="flex items-center gap-2 bg-white text-blue-600 px-5 py-2 rounded-full text-sm font-medium shadow-md hover:scale-105 active:scale-95 transition">
+                    <button className="flex items-center gap-2 bg-white text-teal-600 px-5 py-2 rounded-full text-sm font-medium shadow-md hover:scale-105 active:scale-95 transition">
                       <Calendar size={16} />
                       Book Appointment
                     </button>
@@ -172,10 +172,12 @@ export default function Doctors() {
       </div>
 
       {/* FLOAT BUTTON */}
-      <button className="fixed bottom-6 right-6 bg-blue-600 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+      <button className="fixed bottom-6 right-6 bg-teal-600 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
         <Calendar size={20} />
       </button>
 
     </div>
   );
 }
+
+

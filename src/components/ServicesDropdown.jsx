@@ -85,7 +85,7 @@ export default function ServicesDropdown() {
               className={`px-4 py-3 flex justify-between items-center cursor-pointer leading-tight
                 ${
                   activeMenu === name
-                    ? "bg-blue-50 text-blue-600 font-semibold"
+                    ? "bg-[#F0F7F4] text-teal-600 font-semibold"
                     : "text-gray-600 hover:bg-gray-50"
                 }`}
             >
@@ -123,7 +123,7 @@ export default function ServicesDropdown() {
                 className={`px-4 py-3 flex justify-between items-center cursor-pointer leading-tight
                   ${
                     activeSubMenu === item.name
-                      ? "bg-blue-50 text-blue-600 font-semibold"
+                      ? "bg-[#F0F7F4] text-teal-600 font-semibold"
                       : "text-gray-600 hover:bg-gray-50"
                   }`}
               >
@@ -159,7 +159,7 @@ export default function ServicesDropdown() {
                     <Link
                       key={child.name}
                       to={child.path}
-                      className="px-4 py-3 flex items-start gap-2 text-gray-600 hover:bg-gray-50 hover:text-blue-600 transition-colors leading-tight"
+                      className="px-4 py-3 flex items-start gap-2 text-gray-600 hover:bg-gray-50 hover:text-teal-600 transition-colors leading-tight"
                     >
                       <span className="text-blue-500 font-bold">•</span>
                       <span className="break-words">{child.name}</span>
@@ -172,3 +172,5 @@ export default function ServicesDropdown() {
     </div>
   );
 }
+
+

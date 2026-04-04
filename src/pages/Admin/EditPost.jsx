@@ -24,7 +24,7 @@ export default function EditPost() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 via-white to-blue-100 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FCE9E9] via-white to-[#FBF6F6] px-4">
       <div className="w-full max-w-screen bg-white/80 backdrop-blur-xl border border-white/40 rounded-2xl shadow-xl p-8 m-8">
 
         {/* Back */}
@@ -37,7 +37,7 @@ export default function EditPost() {
 
         {/* Title */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-[#D4AF37] to-[#1E293B] bg-clip-text text-transparent">
             Edit Your Post
           </h1>
         </div>
@@ -80,7 +80,7 @@ export default function EditPost() {
 
         <button
           onClick={handleUpdate}
-          className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-2 rounded-lg shadow-md hover:scale-[1.02] active:scale-[0.98] transition"
+          className="w-full bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white py-2 rounded-lg shadow-md hover:scale-[1.02] active:scale-[0.98] transition"
         >
           Update
         </button>
@@ -88,3 +88,6 @@ export default function EditPost() {
     </div>
   );
 }
+
+
+

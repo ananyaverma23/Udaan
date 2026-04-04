@@ -76,7 +76,7 @@ export default function Footer() {
               Subscribe to our newsletter for updates and fertility tips
             </p>
 
-            <button className="bg-blue-600 px-5 py-2 rounded-md hover:bg-blue-700 transition">
+            <button className="bg-teal-600 px-5 py-2 rounded-md hover:bg-teal-700 transition">
               Subscribe
             </button>
           </div>
@@ -92,3 +92,5 @@ export default function Footer() {
     </div>
   );
 }
+
+

@@ -16,14 +16,14 @@ export default function MultispecialtyOPD() {
   const [openIndex, setOpenIndex] = useState(null);
 
   const specialties = [
-    { name: "Gynecology", icon: <HeartPulse className="text-violet-600 w-6 h-6" /> },
-    { name: "Pediatrics", icon: <Baby className="text-blue-600 w-6 h-6" /> },
-    { name: "Endocrinology", icon: <Activity className="text-violet-600 w-6 h-6" /> },
-    { name: "Radiology", icon: <Microscope className="text-blue-600 w-6 h-6" /> },
-    { name: "Genetics", icon: <Dna className="text-violet-600 w-6 h-6" /> },
-    { name: "General Medicine", icon: <Stethoscope className="text-blue-600 w-6 h-6" /> },
-    { name: "Nutrition & Dietetics", icon: <Apple className="text-violet-600 w-6 h-6" /> },
-    { name: "Fetal Medicine", icon: <ClipboardList className="text-blue-600 w-6 h-6" /> },
+    { name: "Gynecology", icon: <HeartPulse className="text-[#D4AF37] w-6 h-6" /> },
+    { name: "Pediatrics", icon: <Baby className="text-teal-600 w-6 h-6" /> },
+    { name: "Endocrinology", icon: <Activity className="text-[#D4AF37] w-6 h-6" /> },
+    { name: "Radiology", icon: <Microscope className="text-teal-600 w-6 h-6" /> },
+    { name: "Genetics", icon: <Dna className="text-[#D4AF37] w-6 h-6" /> },
+    { name: "General Medicine", icon: <Stethoscope className="text-teal-600 w-6 h-6" /> },
+    { name: "Nutrition & Dietetics", icon: <Apple className="text-[#D4AF37] w-6 h-6" /> },
+    { name: "Fetal Medicine", icon: <ClipboardList className="text-teal-600 w-6 h-6" /> },
   ];
 
   const steps = [
@@ -84,7 +84,7 @@ export default function MultispecialtyOPD() {
     <div className="w-full">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-violet-600 to-blue-600 text-white py-12 px-4">
+      <section className="bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white py-12 px-4">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-6 items-center">
           <div>
             <h1 className="text-3xl md:text-4xl font-bold mb-4">
@@ -108,8 +108,8 @@ export default function MultispecialtyOPD() {
       <section className="py-10 px-4 bg-white">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
 
-          <div className="bg-blue-50 p-6 rounded-2xl shadow-sm">
-            <h2 className="text-xl font-semibold text-blue-700 mb-3">
+          <div className="bg-[#F0F7F4] p-6 rounded-2xl shadow-sm">
+            <h2 className="text-xl font-semibold text-teal-600 mb-3">
               What is Multispecialty OPD?
             </h2>
             <p className="text-gray-600 text-sm">
@@ -135,7 +135,7 @@ export default function MultispecialtyOPD() {
       {/* SPECIALTIES */}
       <section className="bg-gray-100 py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-xl md:text-2xl font-semibold text-teal-600 mb-6">
             Available Specialties
           </h2>
 
@@ -160,7 +160,7 @@ export default function MultispecialtyOPD() {
           <div className="grid md:grid-cols-4 sm:grid-cols-2 gap-6">
             {steps.map((step, index) => (
               <div key={index} className="relative bg-gray-50 p-6 rounded-xl shadow-sm">
-                <div className="absolute -top-4 left-4 w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-violet-600 to-blue-600 text-white text-sm font-semibold">
+                <div className="absolute -top-4 left-4 w-8 h-8 flex items-center justify-center rounded-full bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white text-sm font-semibold">
                   {index + 1}
                 </div>
                 <h3 className="font-semibold mb-2 mt-2">{step.title}</h3>
@@ -174,7 +174,7 @@ export default function MultispecialtyOPD() {
       {/* BENEFITS */}
       <section className="bg-gray-100 py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-xl md:text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-xl md:text-2xl font-semibold text-teal-600 mb-6">
             Key Benefits
           </h2>
 
@@ -204,12 +204,12 @@ export default function MultispecialtyOPD() {
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
                 className={`cursor-pointer rounded-3xl border transition-all duration-300 p-5 flex items-center gap-5 ${
                     openIndex === index
-                    ? "bg-gradient-to-r from-violet-50 to-blue-50 border-violet-200"
+                    ? "bg-gradient-to-r from-violet-50 to-[#FBF6F6] border-[#f2d6d6]"
                     : "bg-gray-50 hover:bg-gray-100"
                 }`}
                 >
                 {/* NUMBER */}
-                <div className="min-w-[50px] h-[50px] flex items-center justify-center rounded-xl text-white font-bold text-lg bg-gradient-to-r from-violet-600 to-blue-600">
+                <div className="min-w-[50px] h-[50px] flex items-center justify-center rounded-xl text-white font-bold text-lg bg-gradient-to-r from-[#D4AF37] to-[#1E293B]">
                     {String(index + 1).padStart(2, "0")}
                 </div>
 
@@ -233,7 +233,7 @@ export default function MultispecialtyOPD() {
         </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-10 px-4 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-10 px-4 text-center">
         <h2 className="text-xl md:text-2xl font-semibold mb-3">
           Book Your OPD Consultation
         </h2>
@@ -241,7 +241,7 @@ export default function MultispecialtyOPD() {
           Get expert care from multiple specialists in one visit.
         </p>
         <Link to="/appointment">
-          <button className="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+          <button className="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
             Book Appointment
           </button>
         </Link>
@@ -250,3 +250,6 @@ export default function MultispecialtyOPD() {
     </div>
   );
 }
+
+
+

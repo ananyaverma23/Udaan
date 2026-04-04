@@ -6,7 +6,7 @@ export default function About() {
     <div className="bg-[#f6f8fc]">
 
       {/* HERO */}
-      <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16 md:py-24">
+      <div className="bg-gradient-to-r from-teal-600 to-teal-500 text-white py-16 md:py-24">
         <Container>
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-[28px] sm:text-[36px] md:text-[48px] font-bold mb-4">
@@ -25,7 +25,7 @@ export default function About() {
       <div className="mt-[-30px] md:mt-[-53px]">
         <Container>
           <div className="bg-white rounded-xl shadow-md py-6 text-center max-w-md mx-auto">
-            <p className="text-blue-600 text-[28px] font-bold">24/7</p>
+            <p className="text-teal-600 text-[28px] font-bold">24/7</p>
             <p className="text-gray-500 text-sm">Support Available</p>
           </div>
         </Container>
@@ -35,7 +35,7 @@ export default function About() {
       <div className="py-10 md:py-14">
         <Container>
           <div className="bg-white rounded-2xl shadow-md p-6 md:p-8">
-            <h2 className="text-blue-600 text-[20px] md:text-[24px] font-semibold mb-4">
+            <h2 className="text-teal-600 text-[20px] md:text-[24px] font-semibold mb-4">
               Our Mission
             </h2>
 
@@ -55,7 +55,7 @@ export default function About() {
       <div className="pb-12 md:pb-16">
         <Container>
 
-          <h2 className="text-center text-blue-600 text-[22px] md:text-[30px] font-semibold mb-10">
+          <h2 className="text-center text-teal-600 text-[22px] md:text-[30px] font-semibold mb-10">
             Our Expertise
           </h2>
 
@@ -64,7 +64,7 @@ export default function About() {
             {/* CARD 1 */}
             <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div className="w-12 h-12 rounded-full bg-blue-100 flex items-center justify-center mb-4">
-                <Sparkles className="text-blue-600" size={20} />
+                <Sparkles className="text-teal-600" size={20} />
               </div>
 
               <h3 className="font-semibold text-[16px] mb-2">
@@ -80,7 +80,7 @@ export default function About() {
             {/* CARD 2 */}
             <div className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
               <div className="w-12 h-12 rounded-full bg-purple-100 flex items-center justify-center mb-4">
-                <Users className="text-purple-600" size={20} />
+                <Users className="text-[#D4AF37]" size={20} />
               </div>
 
               <h3 className="font-semibold text-[16px] mb-2">
@@ -117,7 +117,7 @@ export default function About() {
       {/* CTA */}
       <div className="pb-12 md:pb-16">
         <Container>
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl text-white text-center py-10 md:py-12 px-4">
+          <div className="bg-gradient-to-r from-teal-600 to-teal-500 rounded-2xl text-white text-center py-10 md:py-12 px-4">
 
             <h2 className="text-[22px] md:text-[30px] font-semibold mb-3">
               Ready to Start Your Journey?
@@ -127,7 +127,7 @@ export default function About() {
               Schedule a consultation with our fertility specialists today.
             </p>
 
-            <button className="bg-white text-blue-600 px-6 py-3 rounded-full font-medium hover:scale-105 transition">
+            <button className="bg-white text-teal-600 px-6 py-3 rounded-full font-medium hover:scale-105 transition">
               Book Consultation
             </button>
 
@@ -138,3 +138,5 @@ export default function About() {
     </div>
   );
 }
+
+

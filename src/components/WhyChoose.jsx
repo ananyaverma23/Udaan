@@ -25,7 +25,7 @@ export default function WhyChoose() {
       <Container>
 
         {/* TITLE */}
-        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-blue-600 mb-10 md:mb-14">
+        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-teal-600 mb-10 md:mb-14">
           Why Choose UDAAN?
         </h2>
 
@@ -40,11 +40,11 @@ export default function WhyChoose() {
               
               {/* ICON */}
               <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-blue-100 flex items-center justify-center mb-4 md:mb-6">
-                <item.icon className="text-blue-600" size={24} />
+                <item.icon className="text-teal-600" size={24} />
               </div>
 
               {/* TITLE */}
-              <h3 className="text-[18px] md:text-[20px] font-semibold text-purple-600 mb-3 md:mb-4">
+              <h3 className="text-[18px] md:text-[20px] font-semibold text-[#D4AF37] mb-3 md:mb-4">
                 {item.title}
               </h3>
 
@@ -62,3 +62,5 @@ export default function WhyChoose() {
     </div>
   );
 }
+
+

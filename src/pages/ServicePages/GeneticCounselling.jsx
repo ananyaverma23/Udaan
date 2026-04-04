@@ -1,4 +1,4 @@
-﻿import { HeartPulse, Microscope, Users, ShieldCheck } from "lucide-react";
+import { HeartPulse, Microscope, Users, ShieldCheck } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function GeneticCounselling() {
@@ -6,7 +6,7 @@ export default function GeneticCounselling() {
     <div className="w-full">
 
       {/* HERO SECTION */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-12 px-4">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-12 px-4">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Genetic Counselling
@@ -40,15 +40,15 @@ export default function GeneticCounselling() {
             </p>
           </div>
 
-          <div className="bg-blue-50 p-6 rounded-2xl shadow-sm">
-            <h3 className="text-lg font-semibold text-blue-700 mb-3">
+          <div className="bg-[#F0F7F4] p-6 rounded-2xl shadow-sm">
+            <h3 className="text-lg font-semibold text-teal-600 mb-3">
               Why is it Important?
             </h3>
             <ul className="text-gray-600 text-sm space-y-2">
-              <li>• Identifies risk of genetic disorders</li>
-              <li>• Helps in early diagnosis</li>
-              <li>• Guides decision-making during pregnancy</li>
-              <li>• Provides emotional and psychological support</li>
+              <li>� Identifies risk of genetic disorders</li>
+              <li>� Helps in early diagnosis</li>
+              <li>� Guides decision-making during pregnancy</li>
+              <li>� Provides emotional and psychological support</li>
             </ul>
           </div>
 
@@ -59,14 +59,14 @@ export default function GeneticCounselling() {
       <section className="bg-gray-100 py-10 px-4">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-xl md:text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-xl md:text-2xl font-semibold text-teal-600 mb-6">
             Genetic Counselling Process
           </h2>
 
           <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6">
 
             <div className="bg-white p-5 rounded-xl shadow-sm">
-              <Users className="text-violet-600 mb-3" />
+              <Users className="text-[#D4AF37] mb-3" />
               <h3 className="font-semibold text-sm mb-2">Family History Review</h3>
               <p className="text-xs text-gray-600">
                 Detailed assessment of family and medical history to identify inherited risks.
@@ -74,7 +74,7 @@ export default function GeneticCounselling() {
             </div>
 
             <div className="bg-white p-5 rounded-xl shadow-sm">
-              <Microscope className="text-blue-600 mb-3" />
+              <Microscope className="text-teal-600 mb-3" />
               <h3 className="font-semibold text-sm mb-2">Risk Assessment</h3>
               <p className="text-xs text-gray-600">
                 Evaluation of genetic risks using screening tests like NT Scan and blood tests.
@@ -82,7 +82,7 @@ export default function GeneticCounselling() {
             </div>
 
             <div className="bg-white p-5 rounded-xl shadow-sm">
-              <HeartPulse className="text-violet-600 mb-3" />
+              <HeartPulse className="text-[#D4AF37] mb-3" />
               <h3 className="font-semibold text-sm mb-2">Testing Guidance</h3>
               <p className="text-xs text-gray-600">
                 Recommendation of diagnostic tests such as NIPT, CVS, or amniocentesis.
@@ -90,7 +90,7 @@ export default function GeneticCounselling() {
             </div>
 
             <div className="bg-white p-5 rounded-xl shadow-sm">
-              <ShieldCheck className="text-blue-600 mb-3" />
+              <ShieldCheck className="text-teal-600 mb-3" />
               <h3 className="font-semibold text-sm mb-2">Counselling & Support</h3>
               <p className="text-xs text-gray-600">
                 Explanation of results and emotional support for informed decisions.
@@ -111,11 +111,11 @@ export default function GeneticCounselling() {
 
           <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-sm text-gray-600">
             <div className="bg-violet-50 p-4 rounded-lg">Down Syndrome</div>
-            <div className="bg-blue-50 p-4 rounded-lg">Thalassemia</div>
+            <div className="bg-[#F0F7F4] p-4 rounded-lg">Thalassemia</div>
             <div className="bg-violet-50 p-4 rounded-lg">Cystic Fibrosis</div>
-            <div className="bg-blue-50 p-4 rounded-lg">Sickle Cell Disease</div>
+            <div className="bg-[#F0F7F4] p-4 rounded-lg">Sickle Cell Disease</div>
             <div className="bg-violet-50 p-4 rounded-lg">Chromosomal Abnormalities</div>
-            <div className="bg-blue-50 p-4 rounded-lg">Inherited Genetic Disorders</div>
+            <div className="bg-[#F0F7F4] p-4 rounded-lg">Inherited Genetic Disorders</div>
           </div>
 
         </div>
@@ -125,7 +125,7 @@ export default function GeneticCounselling() {
       <section className="bg-gray-100 py-10 px-4">
         <div className="max-w-4xl mx-auto text-center">
 
-          <h2 className="text-xl md:text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-xl md:text-2xl font-semibold text-teal-600 mb-6">
             Learn More About Genetic Counselling
           </h2>
 
@@ -143,7 +143,7 @@ export default function GeneticCounselling() {
       </section>
 
       {/* CTA SECTION */}
-      <section className="bg-gradient-to-r from-violet-600 to-blue-600 text-white py-10 px-4 text-center">
+      <section className="bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white py-10 px-4 text-center">
         <h2 className="text-xl md:text-2xl font-semibold mb-3">
           Book Your Genetic Counselling Session
         </h2>
@@ -151,7 +151,7 @@ export default function GeneticCounselling() {
           Get expert guidance to understand your genetic health and make informed decisions.
         </p>
         <Link to="/appointment">
-          <button className="bg-white text-blue-700 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">
+          <button className="bg-white text-teal-600 px-6 py-2 rounded-full text-sm font-medium hover:bg-gray-100 transition">
             Book Appointment
           </button>
         </Link>
@@ -160,3 +160,6 @@ export default function GeneticCounselling() {
     </div>
   );
 }
+
+
+

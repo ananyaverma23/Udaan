@@ -27,7 +27,7 @@ export default function Gallery() {
   );
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-blue-50 p-6">
+    <div className="min-h-screen bg-gradient-to-br from-[#F0F7F4] to-[#FBF6F6] p-6">
       <div className="mb-6 flex items-center flex-col md:flex-row justify-between">
         <h1 className="text-3xl font-bold mb-6">Gallery</h1>
 
@@ -43,7 +43,7 @@ export default function Gallery() {
             {isAdmin && (
             <Link
               to="/admin/create"
-              className="rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2.5 text-white m-2"
+              className="rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#1E293B] px-4 py-2.5 text-white m-2"
             >
               Create
             </Link>
@@ -52,7 +52,7 @@ export default function Gallery() {
           {!isAdmin ? (
             <button
               onClick={() => navigate("/admin")}
-              className="rounded-lg bg-gradient-to-r from-purple-600 to-blue-600 px-4 py-2 text-white m-2"
+              className="rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#1E293B] px-4 py-2 text-white m-2"
             >
               Staff Only
             </button>
@@ -99,3 +99,6 @@ export default function Gallery() {
     </div>
   );
 }
+
+
+

@@ -21,7 +21,7 @@ export default function Login() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-100 via-white to-blue-100 px-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FCE9E9] via-white to-[#FBF6F6] px-4">
       
       {/* Card */}
       <div className="w-full max-w-md bg-white/80 backdrop-blur-xl shadow-xl rounded-2xl p-8 border border-white/40">
@@ -36,7 +36,7 @@ export default function Login() {
 
         {/* Title */}
         <div className="text-center mb-6">
-          <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-[#D4AF37] to-[#1E293B] bg-clip-text text-transparent">
             Staff Access
           </h1>
           <p className="text-sm text-gray-500 mt-1">
@@ -84,7 +84,7 @@ export default function Login() {
         {/* Login Button */}
         <button
           onClick={handleLogin}
-          className="w-full bg-gradient-to-r from-purple-600 to-blue-600 text-white py-2 rounded-lg shadow-md hover:scale-[1.02] active:scale-[0.98] transition"
+          className="w-full bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white py-2 rounded-lg shadow-md hover:scale-[1.02] active:scale-[0.98] transition"
         >
           Login
         </button>
@@ -97,3 +97,6 @@ export default function Login() {
     </div>
   );
 }
+
+
+

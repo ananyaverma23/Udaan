@@ -30,7 +30,7 @@ export default function FemalePelvicScan() {
     <div className="bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-14 text-center px-4">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-14 text-center px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Female Pelvic Scan
         </h1>
@@ -60,7 +60,7 @@ export default function FemalePelvicScan() {
           },
         ].map((item, i) => (
           <div key={i} className="bg-white p-6 rounded-xl shadow text-center">
-            <div className="text-blue-600 text-2xl mb-3">
+            <div className="text-teal-600 text-2xl mb-3">
               {item.icon}
             </div>
             <h3 className="font-semibold mb-1">{item.title}</h3>
@@ -83,7 +83,7 @@ export default function FemalePelvicScan() {
         </div>
 
         <div>
-          <h2 className="text-2xl font-semibold text-blue-700 m-10 mb-4">
+          <h2 className="text-2xl font-semibold text-teal-600 m-10 mb-4">
             What is a Pelvic Scan?
           </h2>
           <p className="text-gray-600 ml-10">
@@ -99,12 +99,12 @@ export default function FemalePelvicScan() {
       {/* TYPES */}
       <section className="bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-6">
             Types of Pelvic Scan
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 bg-blue-50 rounded-xl">
+            <div className="p-6 bg-[#F0F7F4] rounded-xl">
               <h3 className="font-semibold mb-2">Abdominal Scan</h3>
               <p className="text-sm text-gray-600">
                 Performed over the abdomen. Requires a full bladder for better
@@ -127,7 +127,7 @@ export default function FemalePelvicScan() {
 
       {/* CONDITIONS GRID */}
       <section className="max-w-6xl mx-auto px-4 py-10">
-        <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-6">
           Conditions It Helps Diagnose
         </h2>
 
@@ -164,7 +164,7 @@ export default function FemalePelvicScan() {
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-3">
+            <h3 className="font-semibold text-teal-600 mb-3">
               What It Detects
             </h3>
             <ul className="text-gray-600 text-sm space-y-2">
@@ -180,7 +180,7 @@ export default function FemalePelvicScan() {
 
       {/* PROCESS */}
         <section className="py-14 px-4 bg-white">
-        <h2 className="text-2xl text-center font-semibold text-blue-700 mb-10">
+        <h2 className="text-2xl text-center font-semibold text-teal-600 mb-10">
             How the Pelvic Scan is Performed
         </h2>
 
@@ -197,7 +197,7 @@ export default function FemalePelvicScan() {
                 key={i}
                 className="bg-gray-50 p-5 rounded-xl shadow text-center hover:shadow-lg transition"
             >
-                <div className="w-10 h-10 mx-auto mb-3 bg-blue-600 text-white rounded-full flex items-center justify-center">
+                <div className="w-10 h-10 mx-auto mb-3 bg-teal-600 text-white rounded-full flex items-center justify-center">
                 {i + 1}
                 </div>
 
@@ -239,13 +239,13 @@ export default function FemalePelvicScan() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-10 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-10 text-center">
         <FaFemale className="mx-auto text-4xl mb-4" />
         <h2 className="text-2xl font-semibold mb-3">
           Book Your Pelvic Scan
         </h2>
         <Link to="/appointment">
-          <button className="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+          <button className="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
             Book Appointment
           </button>
         </Link>
@@ -254,3 +254,5 @@ export default function FemalePelvicScan() {
     </div>
   );
 }
+
+

@@ -38,7 +38,7 @@ export default function SelectiveReduction() {
     <div className="w-full bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-12 px-4 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-12 px-4 text-center">
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Selective Fetal Reduction
@@ -52,7 +52,7 @@ export default function SelectiveReduction() {
 
       {/* INTRO */}
       <section className="max-w-6xl mx-auto px-4 py-10">
-        <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-4">
           What is Selective Fetal Reduction?
         </h2>
         <p className="text-gray-600 mb-4">
@@ -83,7 +83,7 @@ export default function SelectiveReduction() {
       <section className="py-14 px-4 bg-white">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-2xl font-semibold text-center text-blue-700 mb-10">
+          <h2 className="text-2xl font-semibold text-center text-teal-600 mb-10">
             Procedure Overview
           </h2>
 
@@ -113,16 +113,16 @@ export default function SelectiveReduction() {
                 >
                 {/* Connector line */}
                 {i !== 3 && (
-                    <div className="hidden md:block absolute top-4 right-[-140px] w-70 h-1 bg-gradient-to-r from-blue-500 to-violet-500" />
+                    <div className="hidden md:block absolute top-4 right-[-140px] w-70 h-1 bg-gradient-to-r from-[#D4AF37] to-[#0D9488]" />
                 )}
 
                 {/* Step circle */}
-                <div className="relative z-20 w-12 h-12 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 text-white flex items-center justify-center font-bold shadow-lg mb-4">
+                <div className="relative z-20 w-12 h-12 rounded-full bg-gradient-to-r from-teal-600 to-[#1E293B] text-white flex items-center justify-center font-bold shadow-lg mb-4">
                     {i + 1}
                 </div>
 
                 <div className="bg-gray-50 p-5 rounded-xl shadow w-full h-full flex flex-col justify-between">
-                  <h3 className="text-blue-700 font-semibold mb-2">
+                  <h3 className="text-teal-600 font-semibold mb-2">
                     {step.title}
                   </h3>
                   <p className="text-gray-600 text-sm flex-grow">
@@ -172,7 +172,7 @@ export default function SelectiveReduction() {
       <section className="bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-6">
             After the Procedure
           </h2>
 
@@ -214,7 +214,7 @@ export default function SelectiveReduction() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-10 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-10 text-center">
         <FaBaby className="mx-auto text-4xl mb-4" />
         <h2 className="text-2xl font-semibold mb-3">
           Consult a Specialist
@@ -222,7 +222,7 @@ export default function SelectiveReduction() {
         <p className="mb-6">
           Get expert guidance and compassionate care tailored to your situation.
         </p>
-        <Link to="/appointment" className="inline-block bg-white text-blue-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
+        <Link to="/appointment" className="inline-block bg-white text-teal-600 font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
           Book an Appointment
         </Link>
       </section>
@@ -230,3 +230,5 @@ export default function SelectiveReduction() {
     </div>
   );
 }
+
+

@@ -4,7 +4,7 @@ import { Calendar, Phone, Star } from "lucide-react";
 
 export default function CTA() {
   return (
-    <div className="bg-gradient-to-r from-blue-600 to-purple-600 py-14 md:py-20 text-white">
+    <div className="bg-gradient-to-r from-teal-600 to-[#1E293B] py-14 md:py-20 text-white">
       <Container>
 
         <div className="text-center max-w-3xl mx-auto">
@@ -23,16 +23,16 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
 
             {/* PRIMARY */}
-            <Link to="/appointment" className="flex items-center gap-2 bg-white text-blue-600 px-6 sm:px-7 py-3 rounded-full font-medium text-[14px] sm:text-[15px] hover:scale-105 transition">
+            <Link to="/appointment" className="flex items-center gap-2 bg-white text-teal-600 px-6 sm:px-7 py-3 rounded-full font-medium text-[14px] sm:text-[15px] hover:scale-105 transition">
               <Calendar size={18} />
               Book Appointment
             </Link>
 
             {/* SECONDARY */}
-            <button className="flex items-center gap-2 border border-white px-6 sm:px-7 py-3 rounded-full font-medium text-[14px] sm:text-[15px] hover:bg-white hover:text-blue-600 transition">
+            {/* <button className="flex items-center gap-2 border border-white px-6 sm:px-7 py-3 rounded-full font-medium text-[14px] sm:text-[15px] hover:bg-white hover:text-teal-600 transition">
               <Phone size={18} />
               Call Us
-            </button>
+            </button> */}
 
           </div>
 
@@ -48,3 +48,6 @@ export default function CTA() {
     </div>
   );
 }
+
+
+

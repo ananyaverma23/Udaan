@@ -7,7 +7,7 @@ export default function SpermBanking() {
     <div className="bg-gray-50 w-full">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-500 to-purple-600 text-white text-center py-16 px-4">
+      <section className="bg-gradient-to-r from-[#D4AF37] to-[#1E293B] text-white text-center py-16 px-4">
         <h1 className="text-3xl md:text-5xl font-bold mb-3">
           Sperm Banking
         </h1>
@@ -41,16 +41,16 @@ export default function SpermBanking() {
 
           <div className="grid md:grid-cols-3 gap-6">
 
-            <div className="bg-blue-50 p-5 rounded-xl">
-              <FlaskConical className="text-blue-600 mb-3" />
+            <div className="bg-[#F0F7F4] p-5 rounded-xl">
+              <FlaskConical className="text-teal-600 mb-3" />
               <p className="font-semibold mb-2">Medical Treatments</p>
               <p className="text-sm text-gray-600">
                 Chemotherapy or radiation can affect fertility.
               </p>
             </div>
 
-            <div className="bg-purple-50 p-5 rounded-xl">
-              <Clock className="text-purple-600 mb-3" />
+            <div className="bg-[#FBF4D4] p-5 rounded-xl">
+              <Clock className="text-[#D4AF37] mb-3" />
               <p className="font-semibold mb-2">Future Planning</p>
               <p className="text-sm text-gray-600">
                 Delay parenthood while preserving fertility.
@@ -112,11 +112,11 @@ export default function SpermBanking() {
                 className="bg-white p-5 rounded-xl shadow-sm border w-fit max-w-full"
               >
                 <div className="flex items-center gap-3 mb-2">
-                  <div className="w-8 h-8 flex items-center justify-center bg-blue-100 text-blue-600 rounded-full font-semibold">
+                  <div className="w-8 h-8 flex items-center justify-center bg-blue-100 text-teal-600 rounded-full font-semibold">
                     {i + 1}
                   </div>
 
-                  <p className="font-semibold text-blue-600">{step.title}</p>
+                  <p className="font-semibold text-teal-600">{step.title}</p>
                 </div>
 
                 <p className="text-sm text-gray-600">{step.desc}</p>
@@ -135,7 +135,7 @@ export default function SpermBanking() {
             How Long Can Sperm Be Stored?
           </h2>
 
-          <div className="bg-blue-50 p-5 rounded-xl">
+          <div className="bg-[#F0F7F4] p-5 rounded-xl">
             <p className="text-gray-700 text-sm">
               Sperm can be stored for many years without significant loss of quality. Successful pregnancies have been achieved using sperm stored for over a decade.
             </p>
@@ -158,14 +158,14 @@ export default function SpermBanking() {
               <div key={i}>
                 <div className="flex justify-between text-sm mb-1">
                   <span>{item.label}</span>
-                  <span className="text-blue-600 font-medium">
+                  <span className="text-teal-600 font-medium">
                     {item.value}%
                   </span>
                 </div>
 
                 <div className="h-2 bg-gray-200 rounded-full">
                   <div
-                    className="h-2 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
+                    className="h-2 rounded-full bg-gradient-to-r from-[#D4AF37] to-[#0D9488]"
                     style={{ width: `${item.value}%` }}
                   ></div>
                 </div>
@@ -202,7 +202,7 @@ export default function SpermBanking() {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-8 rounded-2xl flex flex-col md:flex-row justify-between gap-6 items-center">
+        <section className="bg-gradient-to-r from-teal-600 to-teal-500 text-white p-8 rounded-2xl flex flex-col md:flex-row justify-between gap-6 items-center">
 
           <div>
             <h2 className="text-2xl font-semibold mb-2">
@@ -213,7 +213,7 @@ export default function SpermBanking() {
             </p>
 
             <Link to="/appointment">
-              <button className="bg-white text-black px-6 py-2 rounded-full font-medium transition hover:bg-blue-600 hover:text-white hover:shadow-lg">
+              <button className="bg-white text-black px-6 py-2 rounded-full font-medium transition hover:bg-teal-600 hover:text-white hover:shadow-lg">
                 Book Consultation
               </button>
             </Link>
@@ -247,3 +247,6 @@ export default function SpermBanking() {
     </div>
   );
 }
+
+
+

@@ -34,7 +34,7 @@ export default function FollicularStudy() {
     <div className="bg-gray-50 text-gray-800">
 
       {/* HERO */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-14 text-center px-4">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-14 text-center px-4">
         <h1 className="text-3xl md:text-4xl font-bold mb-3">
           Follicular Study Scan
         </h1>
@@ -63,7 +63,7 @@ export default function FollicularStudy() {
           },
         ].map((item, i) => (
           <div key={i} className="bg-white p-6 rounded-xl shadow text-center">
-            <div className="text-blue-600 text-2xl mb-3">
+            <div className="text-teal-600 text-2xl mb-3">
               {item.icon}
             </div>
             <h3 className="font-semibold">{item.title}</h3>
@@ -83,7 +83,7 @@ export default function FollicularStudy() {
         </iframe>
 
         <div>
-          <h2 className="text-2xl font-semibold text-blue-700 mb-4">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-4">
             What is Follicular Study?
           </h2>
           <p className="text-gray-600 mb-3">
@@ -101,7 +101,7 @@ export default function FollicularStudy() {
       {/* WHY IMPORTANT */}
       <section className="bg-white py-10 px-4">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+          <h2 className="text-2xl font-semibold text-teal-600 mb-6">
             Why is Follicular Study Important?
           </h2>
 
@@ -111,7 +111,7 @@ export default function FollicularStudy() {
               "Improves conception chances",
               "Helps in fertility treatments",
             ].map((item, i) => (
-              <div key={i} className="bg-blue-50 p-5 rounded-xl text-center">
+              <div key={i} className="bg-[#F0F7F4] p-5 rounded-xl text-center">
                 <p className="text-gray-700">{item}</p>
               </div>
             ))}
@@ -121,7 +121,7 @@ export default function FollicularStudy() {
 
       {/* WHAT IT MONITORS */}
       <section className="max-w-6xl mx-auto px-4 py-10">
-        <h2 className="text-2xl font-semibold text-blue-700 mb-6">
+        <h2 className="text-2xl font-semibold text-teal-600 mb-6">
           What Does It Monitor?
         </h2>
 
@@ -137,7 +137,7 @@ export default function FollicularStudy() {
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-3">
+            <h3 className="font-semibold text-teal-600 mb-3">
               Ovulation Timing
             </h3>
             <p className="text-sm text-gray-600">
@@ -155,7 +155,7 @@ export default function FollicularStudy() {
           </div>
 
           <div className="bg-white p-6 rounded-xl shadow">
-            <h3 className="font-semibold text-blue-700 mb-3">
+            <h3 className="font-semibold text-teal-600 mb-3">
               Response to Treatment
             </h3>
             <p className="text-sm text-gray-600">
@@ -168,7 +168,7 @@ export default function FollicularStudy() {
 
       {/* PROCESS */}
       <section className="py-12 px-4">
-        <h2 className="text-2xl text-center font-semibold text-blue-700 mb-8">
+        <h2 className="text-2xl text-center font-semibold text-teal-600 mb-8">
           How the Study is Done
         </h2>
 
@@ -181,7 +181,7 @@ export default function FollicularStudy() {
             "Guidance for conception is given",
           ].map((step, i) => (
             <div key={i} className="bg-gray-50 p-5 rounded-xl shadow text-center">
-              <div className="w-10 h-10 mx-auto mb-3 bg-blue-600 text-white rounded-full flex items-center justify-center">
+              <div className="w-10 h-10 mx-auto mb-3 bg-teal-600 text-white rounded-full flex items-center justify-center">
                 {i + 1}
               </div>
               <p className="text-sm text-gray-600">{step}</p>
@@ -219,7 +219,7 @@ export default function FollicularStudy() {
       </section>
 
       {/* CTA */}
-      <section className="bg-gradient-to-r from-blue-600 to-violet-600 text-white py-10 text-center">
+      <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-10 text-center">
         <FaFemale className="mx-auto text-4xl mb-4" />
         <h2 className="text-2xl font-semibold mb-3">
           Book Follicular Study
@@ -228,7 +228,7 @@ export default function FollicularStudy() {
           Track ovulation accurately and improve your chances of conception.
         </p>
         <Link to="/appointment">
-          <button className="bg-white text-blue-700 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
+          <button className="bg-white text-teal-600 px-6 py-3 rounded-full font-semibold hover:bg-gray-200">
             Book Appointment
           </button>
         </Link>
@@ -237,3 +237,5 @@ export default function FollicularStudy() {
     </div>
   );
 }
+
+
