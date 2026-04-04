@@ -1,7 +1,14 @@
 import Container from "./Container";
+import { Heart, Sparkles, Stethoscope } from "lucide-react";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
+  const stats = [
+    { icon: Heart, value: "50+", label: "Happy Families" },
+    { icon: Sparkles, value: "50%", label: "Success Rate" },
+    { icon: Stethoscope, value: "7+", label: "Expert Doctors" },
+  ];
+
   return (
     <div 
       className="relative text-white overflow-hidden"
@@ -39,6 +46,22 @@ export default function Hero() {
               and expert guidance. State-of-the-art facilities and experienced 
               specialists dedicated to helping you achieve your dream of parenthood.
             </p>
+
+            {/* STATS */}
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6 px-4 py-6 mb-4">
+              {stats.map((item, index) => {
+                const Icon = item.icon;
+                return (
+                  <div key={index} className="flex items-center gap-3 text-white">
+                    <Icon className="w-10 h-10 opacity-90 bg-white/20 rounded-lg p-2" />
+                    <div>
+                      <h3 className="text-lg font-semibold">{item.value}</h3>
+                      <p className="text-sm opacity-80">{item.label}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
               <Link to="/appointment">

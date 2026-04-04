@@ -97,28 +97,28 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-3">
             <img src={UdaanLogo} alt="Udaan logo" className="w-10 h-10 sm:w-11 sm:h-11 object-contain" />
             <div className="leading-tight">
-              <p className="text-teal-600 font-semibold tracking-wide">UDAAN</p>
+              <p className="text-emerald-700 font-semibold tracking-wide">UDAAN</p>
               <p className="text-[11px] text-gray-500">Fetal Medicine & Fertility Clinic</p>
             </div>
           </Link>
 
           {/* DESKTOP MENU */}
           <div className="hidden md:flex items-center gap-7 text-[16px] text-gray-600 font-medium">
-            <Link to="/" className="hover:text-teal-600 transition">Home</Link>
+            <Link to="/" className="hover:text-emerald-600 transition">Home</Link>
             <div ref={servicesRef} className="relative">
-              <button onClick={() => setShowServices(!showServices)} className="flex items-center gap-1 hover:text-teal-600 transition">
+              <button onClick={() => setShowServices(!showServices)} className="flex items-center gap-1 hover:text-emerald-600 transition">
                 Services <ChevronDown size={16} className={showServices ? "rotate-180" : ""} />
               </button>
               {showServices && <div className="absolute top-12 left-0 z-50"><ServicesDropdown /></div>}
             </div>
-            <Link to="/about" className="hover:text-teal-600 transition">About Us</Link>
-            <Link to="/doctors" className="hover:text-teal-600 transition">Our Doctors</Link>
-            <Link to="/gallery" className="hover:text-teal-600 transition">Gallery</Link>
-            <Link to="/contact" className="hover:text-teal-600 transition">Contact</Link>
+            <Link to="/about" className="hover:text-emerald-600 transition">About Us</Link>
+            <Link to="/doctors" className="hover:text-emerald-600 transition">Our Doctors</Link>
+            <Link to="/gallery" className="hover:text-emerald-600 transition">Gallery</Link>
+            <Link to="/contact" className="hover:text-emerald-600 transition">Contact</Link>
             
             {/* Redirects to the internal Appointment Page */}
             <Link to="/appointment">
-              <button className="bg-gradient-to-r from-teal-600 to-teal-500 text-white px-6 py-2 rounded-full text-sm hover:scale-105 transition shadow-lg shadow-[#F0F7F4]">
+              <button className="bg-gradient-to-r from-emerald-700 to-teal-500 text-white px-6 py-2 rounded-full text-sm hover:scale-105 transition shadow-lg shadow-blue-50">
                 Book Appointment
               </button>
             </Link>
@@ -141,10 +141,10 @@ export default function Navbar() {
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
                 className="flex justify-between items-center cursor-pointer mb-2"
               >
-                <p className={`${mobileTextStyle} transition-colors ${isServicesOpen ? "text-teal-600" : ""}`}>
+                <p className={`${mobileTextStyle} transition-colors ${isServicesOpen ? "text-blue-600" : ""}`}>
                   Our Services
                 </p>
-                {isServicesOpen ? <Minus size={18} className="text-teal-600" /> : <Plus size={18} className="text-gray-400" />}
+                {isServicesOpen ? <Minus size={18} className="text-blue-600" /> : <Plus size={18} className="text-gray-400" />}
               </div>
               
               {isServicesOpen && (
@@ -155,11 +155,11 @@ export default function Navbar() {
                         onClick={() => setMobileLevel1(mobileLevel1 === item.name ? null : item.name)}
                         className="flex justify-between items-center cursor-pointer"
                       >
-                        <span className={`${mobileTextStyle} transition-colors ${mobileLevel1 === item.name ? "text-teal-600" : ""}`}>
+                        <span className={`${mobileTextStyle} transition-colors ${mobileLevel1 === item.name ? "text-blue-600" : ""}`}>
                           {item.name}
                         </span>
                         {item.subItems ? (
-                          mobileLevel1 === item.name ? <Minus size={18} className="text-teal-600" /> : <Plus size={18} className="text-gray-400" />
+                          mobileLevel1 === item.name ? <Minus size={18} className="text-blue-600" /> : <Plus size={18} className="text-gray-400" />
                         ) : (
                           <Link to={item.path || "/"} onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-blue-500">Visit</Link>
                         )}
@@ -212,7 +212,7 @@ export default function Navbar() {
             
             {/* Redirects to the internal Appointment Page */}
             <Link to="/appointment" onClick={() => setIsOpen(false)} className="mt-2">
-              <button className="w-full bg-gradient-to-r from-teal-600 to-teal-500 text-white py-4 rounded-xl font-bold shadow-lg">
+              <button className="w-full bg-gradient-to-r from-emerald-700 to-teal-500 text-white py-4 rounded-xl font-bold shadow-lg">
                 Book Appointment
               </button>
             </Link>
@@ -222,5 +222,3 @@ export default function Navbar() {
     </div>
   );
 }
-
-

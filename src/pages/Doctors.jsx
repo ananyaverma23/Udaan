@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import Container from "../components/Container";
 import { Calendar } from "lucide-react";
 
@@ -9,38 +10,38 @@ export default function Doctors() {
     {
       name: "Dr. Sandip Mondal",
       dept: "Gynecology & Obstetrics",
-      desc: "MBBS(HONS), MS (G&O), MRCOG (UK), Fellowship in Fetal Medicine & Reproductive Medicine.",
-      // img: doc1
+      desc: "MBBS(HONS)(Gold Medalist), MS (G&O), MRCOG - I (UK)(LONDON), Fellowship in Fetal Medicine (ICOG)(TN), Fellowship in Reproductive Medicine (NOVA-WINGS IVF, AHMEDABAD), Fellowship in Advanced Laproscopic Surgery (FALS)",
+      img: "/Sandip Mondal.jpeg",
     },
     {
       name: "Dr. Dipanjana Datta",
       dept: "Genetic Counseling",
-      desc: "Consultant Genetic Counselor, State Coordinator (WB), ORDI.",
+      desc: "Consultant Genetic Counselor State Co-ordinator (WB) Organization of Rare Disease India (ORDI).",
     },
     {
       name: "Dr. Ruchika Kar Chaudhuri",
       dept: "Gynecology & Obstetrics",
-      desc: "MBBS, MS (G&O), Specialist in women’s health.",
+      desc: "MBBS, MS (G&O)",
     },
     {
       name: "Dr. Sukanta Dutta",
       dept: "Internal Medicine",
-      desc: "MBBS, MD (Medicine), expert in internal disorders.",
+      desc: "MBBS, MD (MEDICINE)",
     },
     {
       name: "Dr. Ipsita Ghosh",
       dept: "Pediatrics",
-      desc: "MBBS(HONS), MD (Pediatrics), child specialist.",
+      desc: "MBBS(HONS) MD(PAEDIATRICS)",
     },
     {
       name: "Dr. Arka Banerjee",
       dept: "General Surgery",
-      desc: "MBBS, MS, DNB Surgery.",
+      desc: "MBBS, MS (SURGERY), DNB (SURGERY)",
     },
     {
       name: "Dr. Dibyajyoti Gupta",
       dept: "Cardiology",
-      desc: "MBBS, Dip Cardiology.",
+      desc: "MBBS, Dip Cardiology (PGDCC)",
     },
   ];
 
@@ -50,8 +51,6 @@ export default function Doctors() {
     "Genetic Counseling",
     "Internal Medicine",
     "Pediatrics",
-    "General Surgery",
-    "Cardiology",
   ];
 
   const filtered =
@@ -72,7 +71,7 @@ export default function Doctors() {
             </h1>
 
             <p className="text-white/90 text-[14px] md:text-[17px] mb-6">
-              Our team of highly qualified specialists brings together decades of experience.
+              Our team of highly qualified specialists brings together decades of experience in fertility care, ensuring you receive the best possible treatment and support on your journey to parenthood.
             </p>
 
             <div className="inline-block bg-white/20 px-5 py-3 rounded-full backdrop-blur">
@@ -121,44 +120,46 @@ export default function Doctors() {
               >
 
                 {/* IMAGE */}
-                <div className="h-[220px] relative overflow-hidden">
+                <div className="relative h-[240px] overflow-hidden bg-slate-100">
 
-                  {/* PLACEHOLDER */}
-                  <div className="h-full w-full bg-gray-300 flex items-center justify-center text-gray-500 text-sm">
-                    Doctor Image
-                  </div>
-
-                  {/* USE THIS WHEN ADDING REAL IMAGE */}
-                  {/*
-                  <img
-                    src={doc.img}
-                    alt={doc.name}
-                    className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
-                  />
-                  */}
+                  {doc.img ? (
+                    <img
+                      src={doc.img}
+                      alt={doc.name}
+                      className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                      style={{ objectPosition: "center 10%" }}
+                    />
+                  ) : (
+                    <div className="absolute inset-0 flex h-full w-full items-center justify-center bg-gray-300 text-sm text-gray-500">
+                      Doctor Image
+                    </div>
+                  )}
 
                   {/* OVERLAY */}
                   <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition duration-300" />
 
                   {/* NAME */}
-                  <div className="absolute bottom-0 left-0 w-full p-4 text-white z-10">
-                    <h3 className="font-semibold text-[15px]">{doc.name}</h3>
-                    <p className="text-xs text-white/80">{doc.dept}</p>
+                  <div className="absolute bottom-0 left-0 z-10 w-full p-4 text-black">
+                    <h3 className="text-[15px] font-bold">{doc.name}</h3>
+                    <p className="text-xs font-semibold text-black">{doc.dept}</p>
                   </div>
 
                   {/* HOVER BUTTON */}
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 z-20">
-                    <button className="flex items-center gap-2 bg-white text-teal-600 px-5 py-2 rounded-full text-sm font-medium shadow-md hover:scale-105 active:scale-95 transition">
+                  <div className="absolute inset-0 z-20 flex items-center justify-center opacity-0 transition duration-300 group-hover:opacity-100">
+                    <Link
+                      to="/appointment"
+                      className="flex items-center gap-2 rounded-full bg-white px-5 py-2 text-sm font-medium text-teal-600 shadow-md transition hover:scale-105 active:scale-95"
+                    >
                       <Calendar size={16} />
                       Book Appointment
-                    </button>
+                    </Link>
                   </div>
 
                 </div>
 
                 {/* DESC */}
                 <div className="p-4 text-center">
-                  <p className="text-[13px] text-gray-600 leading-relaxed line-clamp-3">
+                  <p className="text-[13px] text-black leading-relaxed line-clamp-3">
                     {doc.desc}
                   </p>
                 </div>
