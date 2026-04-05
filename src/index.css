@@ -1,9 +1,19 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-family-poppins: 'Poppins', sans-serif;
+  --font-family-times: 'Times New Roman', serif;
+}
 
 body {  
-  font-family: 'Inter', 'Segoe UI', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background: #F0F7F4;
   color: #1f2937;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', serif;
 }
 
 button {
@@ -15,6 +25,31 @@ html, body, #root {
   padding: 0;
   width: 100%;
 }
+
+.service-page {
+  font-family: "Quicksand", sans-serif;
+}
+
+.admin-page {
+  font-family: "Quicksand", sans-serif;
+}
+
+.service-page :is(h1, h2, h3, h4, h5, h6) {
+  font-family: "Times New Roman", serif;
+}
+
+.admin-page :is(h1, h2, h3, h4, h5, h6) {
+  font-family: "Times New Roman", serif;
+}
+
+.service-page :is(button, input, select, textarea) {
+  font-family: inherit;
+}
+
+.admin-page :is(button, input, select, textarea) {
+  font-family: inherit;
+}
+
 @keyframes dropdown {
   from {
     opacity: 0;
@@ -28,6 +63,46 @@ html, body, #root {
 
 .animate-dropdown {
   animation: dropdown 0.18s ease-out;
+}
+
+@keyframes heroHeadingReveal {
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(0.98);
+    filter: blur(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
+}
+
+.hero-heading {
+  text-wrap: balance;
+}
+
+.hero-heading-word {
+  display: inline-block;
+  margin-right: 0.25em;
+  opacity: 0;
+  will-change: transform, opacity, filter;
+  animation: heroHeadingReveal 0.75s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: var(--word-delay, 0ms);
+}
+
+.hero-heading-word:last-child {
+  margin-right: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-heading-word {
+    opacity: 1;
+    transform: none;
+    filter: none;
+    animation: none;
+  }
 }
 
 @media print {

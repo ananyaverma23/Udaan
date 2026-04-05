@@ -60,10 +60,11 @@ export default function Contact() {
       <div className="bg-gradient-to-r from-teal-600 to-teal-500 text-white py-14 md:py-20">
         <Container>
           <div className="text-center max-w-2xl mx-auto">
-            <h1 className="text-[28px] md:text-[40px] font-bold mb-4">
+            <h1 className="text-[28px] md:text-[40px] font-bold font-['Quicksand'] tracking-wide mb-4">
               Contact Us
             </h1>
-            <p className="text-white/90 text-sm md:text-base">
+
+            <p className="text-white/90 text-sm md:text-base font-['Quicksand'] tracking-wide">
               Have questions about our fertility & fetal medicine treatments? We're here to help.
             </p>
           </div>
@@ -74,7 +75,7 @@ export default function Contact() {
       <div className="py-10 md:py-14">
         <Container>
           <div className="bg-white rounded-xl shadow-md p-4 md:p-6">
-            <h2 className="text-lg font-semibold mb-4">
+            <h2 className="text-lg font-semibold font-['Quicksand'] tracking-wide mb-4">
               Our Location
             </h2>
 
@@ -112,7 +113,7 @@ export default function Contact() {
                   value={formData.fullName}
                   onChange={handleChange}
                   required
-                  className="w-full border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border rounded-md px-3 py-2 text-sm font-['Quicksand'] focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
                 <input
@@ -122,7 +123,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border rounded-md px-3 py-2 text-sm font-['Quicksand'] focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
                 <input
@@ -132,7 +133,7 @@ export default function Contact() {
                   value={formData.phone}
                   onChange={handleChange}
                   required
-                  className="w-full border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full border rounded-md px-3 py-2 text-sm font-['Quicksand'] focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
 
                 <textarea
@@ -142,7 +143,7 @@ export default function Contact() {
                   value={formData.message}
                   onChange={handleChange}
                   required
-                  className="w-full border rounded-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none flex-grow"
+                  className="w-full border rounded-md px-3 py-2 text-sm font-['Quicksand'] focus:outline-none focus:ring-2 focus:ring-blue-500 resize-none flex-grow"
                 ></textarea>
 
                 {statusMessage && (
@@ -154,7 +155,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="w-full bg-teal-600 text-white py-2.5 rounded-md text-sm font-medium hover:bg-teal-600 transition mt-auto disabled:bg-gray-400 disabled:cursor-not-allowed"
+                  className="w-full bg-teal-600 text-white py-2.5 rounded-md text-sm font-medium font-['Quicksand'] hover:bg-teal-600 transition mt-auto disabled:bg-gray-400 disabled:cursor-not-allowed"
                 >
                   {isLoading ? "Sending..." : "Send Message"}
                 </button>
@@ -172,8 +173,7 @@ export default function Contact() {
                   Contact Information
                 </h2>
 
-                <div className="space-y-4 text-sm text-gray-600">
-
+                <div className="space-y-4 text-sm text-gray-600 font-['Quicksand'] tracking-wide">
                   <div className="flex items-start gap-3">
                     <MapPin className="text-teal-600 mt-1" size={18} />
                     <p>
@@ -198,11 +198,11 @@ export default function Contact() {
               {/* WORKING HOURS */}
               <div className="bg-white rounded-xl shadow-md p-6">
 
-                <h2 className="text-lg font-semibold mb-4">
+                <h2 className="text-lg font-semibold font-['Quicksand'] tracking-wide mb-4">
                   Working Hours
                 </h2>
 
-                <div className="flex justify-between text-sm text-gray-600">
+                <div className="flex justify-between text-sm text-gray-600 font-['Quicksand'] tracking-wide">
                   <span>Monday - Sunday</span>
                   <span>8:00 AM - 6:00 PM</span>
                 </div>

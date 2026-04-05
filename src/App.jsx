@@ -9,6 +9,8 @@ import Doctors from "./pages/Doctors";
 import Contact from "./pages/Contact";
 import Loader from "./components/Loader";
 import Appointment from "./pages/Appointment";
+import AdminPageLayout from "./components/AdminPageLayout";
+import ServicePageLayout from "./components/ServicePageLayout";
 import FertilityTesting from "./pages/ServicePages/FertilityTesting";
 import IUI from "./pages/ServicePages/IUI";
 import IVF from "./pages/ServicePages/IVF";
@@ -55,34 +57,38 @@ export default function App() {
           <Route path="/appointment" element={<Appointment />} />
 
           {/* Service Pages */}
-          <Route path="/services/fertility-testing" element={<FertilityTesting />} />
-          <Route path="/services/iui" element={<IUI />} />
-          <Route path="/services/ivf" element={<IVF />} />
-          <Route path="/services/egg-freezing" element={<EggFreezing />} />
-          <Route path="/services/sperm-banking" element={<SpermBanking />} />
-          <Route path="/services/nutrition" element={<NutritionalGuidance />} />
-          <Route path="/services/nt-scan" element={<NtScan />} />
-          <Route path="/services/anomaly-scan" element={<AnomalyScan />} />
-          <Route path="/services/growth-scan" element={<GrowthScan />} />
-          <Route path="/services/doppler-scan" element={<DopplerScan />} />
-          <Route path="/services/fetal-echo" element={<EchoScan />} />
-          <Route path="/services/neurosonography" element={<Neurosonography />} />
-          <Route path="/services/multiple-pregnancy" element={<MultiplePregnancy />} />
-          <Route path="/services/amniocentesis" element={<Amniocentesis />} />
-          <Route path="/services/cvs" element={<CVS />} />
-          <Route path="/services/fetal-reductions" element={<FetalReductions />} />
-          <Route path="/services/nipt" element={<NIPT />} />
-          <Route path="/services/pelvic-scan" element={<PelvicScan />} />
-          <Route path="/services/follicular-study" element={<FollicularStudy />} />
-          <Route path="/services/genetic-counselling" element={<GeneticCounselling />} />
-          <Route path="/services/opd-services" element={<MultispecialityOPD />} />
+          <Route path="/services" element={<ServicePageLayout />}>
+            <Route path="fertility-testing" element={<FertilityTesting />} />
+            <Route path="iui" element={<IUI />} />
+            <Route path="ivf" element={<IVF />} />
+            <Route path="egg-freezing" element={<EggFreezing />} />
+            <Route path="sperm-banking" element={<SpermBanking />} />
+            <Route path="nutrition" element={<NutritionalGuidance />} />
+            <Route path="nt-scan" element={<NtScan />} />
+            <Route path="anomaly-scan" element={<AnomalyScan />} />
+            <Route path="growth-scan" element={<GrowthScan />} />
+            <Route path="doppler-scan" element={<DopplerScan />} />
+            <Route path="fetal-echo" element={<EchoScan />} />
+            <Route path="neurosonography" element={<Neurosonography />} />
+            <Route path="multiple-pregnancy" element={<MultiplePregnancy />} />
+            <Route path="amniocentesis" element={<Amniocentesis />} />
+            <Route path="cvs" element={<CVS />} />
+            <Route path="fetal-reductions" element={<FetalReductions />} />
+            <Route path="nipt" element={<NIPT />} />
+            <Route path="pelvic-scan" element={<PelvicScan />} />
+            <Route path="follicular-study" element={<FollicularStudy />} />
+            <Route path="genetic-counselling" element={<GeneticCounselling />} />
+            <Route path="opd-services" element={<MultispecialityOPD />} />
+          </Route>
 
-          <Route path="/admin" element={<Login />} />
+          <Route path="/admin" element={<AdminPageLayout />}>
+            <Route index element={<Login />} />
+            <Route path=":id" element={<GalleryDetail />} />
+            <Route path="create" element={<CreatePost />} />
+            <Route path="edit/:id" element={<EditPost />} />
+          </Route>
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/gallery/:id" element={<GalleryDetail />} />
-          <Route path="/admin/:id" element={<GalleryDetail />} />
-          <Route path="/admin/create" element={<CreatePost />} />
-          <Route path="/admin/edit/:id" element={<EditPost />} />
         </Routes>
 
         <Footer />

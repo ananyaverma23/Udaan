@@ -1,4 +1,5 @@
 import Container from "../components/Container";
+import { Link } from "react-router-dom";
 import { ShieldCheck, Users, Sparkles } from "lucide-react";
 
 export default function About() {
@@ -9,11 +10,11 @@ export default function About() {
       <div className="bg-gradient-to-r from-teal-600 to-teal-500 text-white py-16 md:py-24">
         <Container>
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-[28px] sm:text-[36px] md:text-[48px] font-bold mb-4">
+            <h1 className="text-[28px] sm:text-[36px] md:text-[48px] font-bold font-['Quicksand'] tracking-wide mb-4">
               About UDAAN
             </h1>
 
-            <p className="text-white/90 text-[15px] md:text-[18px] leading-relaxed">
+            <p className="text-white/90 text-[15px] md:text-[18px] font-['Quicksand'] tracking-wide leading-relaxed">
               1st Dedicated Fetal Medicine & Fertility Clinic in Purba Bardhaman.
               Your trusted partner on the journey to parenthood.
             </p>
@@ -25,8 +26,8 @@ export default function About() {
       <div className="mt-[-30px] md:mt-[-53px]">
         <Container>
           <div className="bg-white rounded-xl shadow-md py-6 text-center max-w-md mx-auto">
-            <p className="text-teal-600 text-[28px] font-bold">24/7</p>
-            <p className="text-gray-500 text-sm">Support Available</p>
+            <p className="text-teal-600 text-[28px] font-bold font-['Quicksand'] tracking-wide">24/7</p>
+            <p className="text-gray-500 text-sm font-['Quicksand'] tracking-wide">Support Available</p>
           </div>
         </Container>
       </div>
@@ -35,11 +36,11 @@ export default function About() {
       <div className="py-10 md:py-14">
         <Container>
           <div className="bg-white rounded-2xl shadow-md p-6 md:p-8">
-            <h2 className="text-teal-600 text-[20px] md:text-[24px] font-semibold mb-4">
+            <h2 className="text-teal-600 text-[20px] md:text-[24px] font-semibold font-['Quicksand'] tracking-wide mb-4">
               Our Mission
             </h2>
 
-            <p className="text-gray-600 text-[14px] md:text-[16px] leading-relaxed">
+            <p className="text-gray-600 text-[14px] md:text-[16px] font-['Quicksand'] tracking-wide leading-relaxed">
               At UDAAN, we are dedicated to helping couples and individuals achieve
               their dream of parenthood. Our mission is to provide compassionate,
               personalized care using the most advanced reproductive technologies
@@ -55,7 +56,7 @@ export default function About() {
       <div className="pb-12 md:pb-16">
         <Container>
 
-          <h2 className="text-center text-teal-600 text-[22px] md:text-[30px] font-semibold mb-10">
+          <h2 className="text-center text-teal-600 text-[22px] md:text-[30px] font-semibold font-['Quicksand'] tracking-wide mb-10">
             Our Expertise
           </h2>
 
@@ -67,11 +68,11 @@ export default function About() {
                 <Sparkles className="text-teal-600" size={20} />
               </div>
 
-              <h3 className="font-semibold text-[16px] mb-2">
+              <h3 className="font-semibold font-['Quicksand'] tracking-wide text-[16px] mb-2">
                 Advanced Technology
               </h3>
 
-              <p className="text-gray-600 text-[14px]">
+              <p className="text-gray-600 text-[14px] font-['Quicksand'] tracking-wide">
                 State-of-the-art facilities and cutting-edge reproductive
                 technologies to maximize success rates.
               </p>
@@ -83,11 +84,11 @@ export default function About() {
                 <Users className="text-[#D4AF37]" size={20} />
               </div>
 
-              <h3 className="font-semibold text-[16px] mb-2">
+              <h3 className="font-semibold font-['Quicksand'] tracking-wide text-[16px] mb-2">
                 Expert Team
               </h3>
 
-              <p className="text-gray-600 text-[14px]">
+              <p className="text-gray-600 text-[14px] font-['Quicksand'] tracking-wide">
                 Board-certified specialists with years of experience in
                 reproductive and fetal medicine.
               </p>
@@ -99,11 +100,11 @@ export default function About() {
                 <ShieldCheck className="text-green-600" size={20} />
               </div>
 
-              <h3 className="font-semibold text-[16px] mb-2">
+              <h3 className="font-semibold font-['Quicksand'] tracking-wide text-[16px] mb-2">
                 Personalized Care
               </h3>
 
-              <p className="text-gray-600 text-[14px]">
+              <p className="text-gray-600 text-[14px] font-['Quicksand'] tracking-wide">
                 Tailored treatment plans designed to meet your unique needs and
                 circumstances.
               </p>
@@ -119,17 +120,17 @@ export default function About() {
         <Container>
           <div className="bg-gradient-to-r from-teal-600 to-teal-500 rounded-2xl text-white text-center py-10 md:py-12 px-4">
 
-            <h2 className="text-[22px] md:text-[30px] font-semibold mb-3">
+            <h2 className="text-[22px] md:text-[30px] font-semibold font-['Quicksand'] tracking-wide mb-3">
               Ready to Start Your Journey?
             </h2>
 
-            <p className="text-white/90 text-[14px] md:text-[16px] mb-6">
+            <p className="text-white/90 text-[14px] md:text-[16px] font-['Quicksand'] tracking-wide mb-6">
               Schedule a consultation with our fertility specialists today.
             </p>
 
-            <button className="bg-white text-teal-600 px-6 py-3 rounded-full font-medium hover:scale-105 transition">
-              Book Consultation
-            </button>
+            <Link to="/appointment" className="inline-block bg-white text-teal-600 font-bold font-['Quicksand'] py-3 px-6 rounded-2xl hover:bg-gray-100 transition">
+              Book an Appointment
+            </Link>
 
           </div>
         </Container>
@@ -138,5 +139,3 @@ export default function About() {
     </div>
   );
 }
-
-

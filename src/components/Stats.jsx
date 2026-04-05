@@ -2,17 +2,17 @@ import Container from "./Container";
 
 export default function Stats() {
   return (
-      <div className="bg-white border-b border-[#cb6d5e] transition-all duration-300 hover:shadow-[0_2px_0_0_#cb6d5e]">      
+    <div className="bg-white border-b border-[#cb6d5e] transition-all duration-300 hover:shadow-[0_2px_0_0_#cb6d5e]">
       <Container>
         <div className="text-center py-8">
           
           {/* NUMBER */}
-          <p className="text-[32px] md:text-[36px] font-bold text-teal-600">
+          <p className="text-[32px] md:text-[36px] font-bold font-['Quicksand'] tracking-wide text-teal-600">
             24/7
           </p>
 
           {/* LABEL */}
-          <p className="text-[14px] md:text-[15px] text-gray-500">
+          <p className="text-[14px] md:text-[15px] text-gray-500 font-['Quicksand'] tracking-wide">
             Support Available
           </p>
 
@@ -21,5 +21,3 @@ export default function Stats() {
     </div>
   );
 }
-
-

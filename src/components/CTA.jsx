@@ -10,12 +10,12 @@ export default function CTA() {
         <div className="text-center max-w-3xl mx-auto">
 
           {/* HEADING */}
-          <h2 className="text-[28px] sm:text-[34px] md:text-[44px] font-bold mb-4 leading-tight">
+          <h2 className="text-[28px] sm:text-[34px] md:text-[44px] font-bold font-['Quicksand'] mb-4 leading-tight">
             Ready to Start Your Journey?
           </h2>
 
           {/* SUBTEXT */}
-          <p className="text-[15px] sm:text-[17px] md:text-[18px] text-white/90 mb-8">
+          <p className="text-[15px] sm:text-[17px] md:text-[18px] text-white/90 font-['Quicksand'] mb-8">
             Schedule a consultation with our fertility experts today.
           </p>
 
@@ -23,7 +23,7 @@ export default function CTA() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
 
             {/* PRIMARY */}
-            <Link to="/appointment" className="flex items-center gap-2 bg-white text-teal-600 px-6 sm:px-7 py-3 rounded-full font-medium text-[14px] sm:text-[15px] hover:scale-105 transition">
+            <Link to="/appointment" className="flex items-center gap-2 bg-white text-teal-600 px-6 sm:px-7 py-3 rounded-full font-medium font-['Quicksand'] text-[14px] sm:text-[15px] hover:scale-105 transition">
               <Calendar size={18} />
               Book Appointment
             </Link>
@@ -37,7 +37,7 @@ export default function CTA() {
           </div>
 
           {/* FOOT NOTE */}
-          <div className="flex items-center justify-center gap-2 text-[14px] sm:text-[15px] text-white/90">
+          <div className="flex items-center justify-center gap-2 text-[14px] sm:text-[15px] text-white/90 font-['Quicksand']">
             <Star size={16} className="text-yellow-300" />
             <span>24/7 Services available</span>
           </div>
@@ -48,6 +48,3 @@ export default function CTA() {
     </div>
   );
 }
-
-
-

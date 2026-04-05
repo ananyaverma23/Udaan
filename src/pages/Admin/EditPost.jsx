@@ -16,7 +16,7 @@ export default function EditPost() {
 
   const [form, setForm] = useState(existing);
 
-  if (!form) return <p className="p-6">Post not found</p>;
+  if (!form) return <p className="admin-page p-6">Post not found</p>;
 
   const handleUpdate = () => {
     updatePost(id, form);
@@ -24,7 +24,7 @@ export default function EditPost() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FCE9E9] via-white to-[#FBF6F6] px-4">
+    <div className="admin-page min-h-screen flex items-center justify-center bg-gradient-to-br from-[#FCE9E9] via-white to-[#FBF6F6] px-4">
       <div className="w-full max-w-screen bg-white/80 backdrop-blur-xl border border-white/40 rounded-2xl shadow-xl p-8 m-8">
 
         {/* Back */}

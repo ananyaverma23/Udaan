@@ -21,11 +21,11 @@ export default function GalleryDetail() {
     navigate("/gallery");
   };
 
-  if (!post) return <p className="p-6">Post not found</p>;
+  if (!post) return <p className="admin-page p-6">Post not found</p>;
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#F0F7F4] to-[#FBF6F6] p-6">
-      <Link to="/gallery" className="mb-4 inline-block text-teal-600">
+    <div className="admin-page min-h-screen bg-gradient-to-br from-[#F0F7F4] to-[#FBF6F6] p-6">
+      <Link to="/gallery" className="mb-4 inline-block text-teal-600 font-medium font-quicksand">
         Back
       </Link>
 

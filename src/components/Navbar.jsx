@@ -7,9 +7,7 @@ import UdaanLogo from "../assets/UdaanLogo.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const [showServices, setShowServices] = useState(false);
-  
-  // Mobile Accordion States
+  const [showServices, setShowServices] = useState(false); 
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const [mobileLevel1, setMobileLevel1] = useState(null);
   const [mobileLevel2, setMobileLevel2] = useState(null);
@@ -86,7 +84,7 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClick);
   }, []);
 
-  const mobileTextStyle = "text-[16px] text-gray-700 font-medium";
+  const mobileTextStyle = "text-[16px] text-gray-700 font-medium font-['Quicksand']";
 
   return (
     <div className="w-full sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
@@ -97,13 +95,13 @@ export default function Navbar() {
           <Link to="/" className="flex items-center gap-3">
             <img src={UdaanLogo} alt="Udaan logo" className="w-10 h-10 sm:w-11 sm:h-11 object-contain" />
             <div className="leading-tight">
-              <p className="text-emerald-700 font-semibold tracking-wide">UDAAN</p>
-              <p className="text-[11px] text-gray-500">Fetal Medicine & Fertility Clinic</p>
+              <p className="text-emerald-700 font-semibold tracking-wide font-['times_new_roman']">UDAAN</p>
+              <p className="text-[11px] text-gray-500 font-['Quicksand']">Fetal Medicine & Fertility Clinic</p>
             </div>
           </Link>
 
           {/* DESKTOP MENU */}
-          <div className="hidden md:flex items-center gap-7 text-[16px] text-gray-600 font-medium">
+          <div className="hidden md:flex items-center gap-7 text-[16px] text-gray-600 font-medium font-['Quicksand']">
             <Link to="/" className="hover:text-emerald-600 transition">Home</Link>
             <div ref={servicesRef} className="relative">
               <button onClick={() => setShowServices(!showServices)} className="flex items-center gap-1 hover:text-emerald-600 transition">
@@ -116,9 +114,8 @@ export default function Navbar() {
             <Link to="/gallery" className="hover:text-emerald-600 transition">Gallery</Link>
             <Link to="/contact" className="hover:text-emerald-600 transition">Contact</Link>
             
-            {/* Redirects to the internal Appointment Page */}
             <Link to="/appointment">
-              <button className="bg-gradient-to-r from-emerald-700 to-teal-500 text-white px-6 py-2 rounded-full text-sm hover:scale-105 transition shadow-lg shadow-blue-50">
+              <button className="bg-gradient-to-r from-emerald-700 to-teal-500 text-white px-6 py-2 rounded-full text-sm font-['Quicksand'] hover:scale-105 transition shadow-lg shadow-blue-50">
                 Book Appointment
               </button>
             </Link>
@@ -130,12 +127,11 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* MOBILE MENU OVERLAY */}
+        {/* MOBILE MENU */}
         {isOpen && (
           <div className="md:hidden flex flex-col gap-5 pb-8 animate-in slide-in-from-top-2 duration-300">
             <Link to="/" onClick={() => setIsOpen(false)} className={mobileTextStyle}>Home</Link>
 
-            {/* MAIN SERVICES TOGGLE */}
             <div className="flex flex-col">
               <div 
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -161,7 +157,7 @@ export default function Navbar() {
                         {item.subItems ? (
                           mobileLevel1 === item.name ? <Minus size={18} className="text-blue-600" /> : <Plus size={18} className="text-gray-400" />
                         ) : (
-                          <Link to={item.path || "/"} onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-blue-500">Visit</Link>
+                          <Link to={item.path || "/"} onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-blue-500 font-['Quicksand']">Visit</Link>
                         )}
                       </div>
 
@@ -210,9 +206,8 @@ export default function Navbar() {
             <Link to="/gallery" onClick={() => setIsOpen(false)} className={mobileTextStyle}>Gallery</Link>
             <Link to="/contact" onClick={() => setIsOpen(false)} className={mobileTextStyle}>Contact</Link>
             
-            {/* Redirects to the internal Appointment Page */}
             <Link to="/appointment" onClick={() => setIsOpen(false)} className="mt-2">
-              <button className="w-full bg-gradient-to-r from-emerald-700 to-teal-500 text-white py-4 rounded-xl font-bold shadow-lg">
+              <button className="w-full bg-gradient-to-r from-emerald-700 to-teal-500 text-white py-4 rounded-xl font-bold font-['Quicksand'] shadow-lg">
                 Book Appointment
               </button>
             </Link>

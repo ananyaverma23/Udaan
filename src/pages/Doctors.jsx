@@ -66,17 +66,17 @@ export default function Doctors() {
         <Container>
           <div className="text-center max-w-3xl mx-auto">
 
-            <h1 className="text-[26px] sm:text-[34px] md:text-[42px] font-bold mb-4">
+            <h1 className="text-[26px] sm:text-[34px] md:text-[42px] font-bold font-['Quicksand'] tracking-wide mb-4">
               Meet Our Expert Team of Doctors
             </h1>
 
-            <p className="text-white/90 text-[14px] md:text-[17px] mb-6">
+            <p className="text-white/90 text-[14px] md:text-[17px] font-['Quicksand'] tracking-wide mb-6">
               Our team of highly qualified specialists brings together decades of experience in fertility care, ensuring you receive the best possible treatment and support on your journey to parenthood.
             </p>
 
             <div className="inline-block bg-white/20 px-5 py-3 rounded-full backdrop-blur">
-              <p className="font-semibold">24/7</p>
-              <p className="text-xs text-white/80">Service Available</p>
+              <p className="font-semibold font-['Quicksand']">24/7</p>
+              <p className="text-xs text-white/80 font-['Quicksand']">Service Available</p>
             </div>
 
           </div>
@@ -140,8 +140,8 @@ export default function Doctors() {
 
                   {/* NAME */}
                   <div className="absolute bottom-0 left-0 z-10 w-full p-4 text-black">
-                    <h3 className="text-[15px] font-bold">{doc.name}</h3>
-                    <p className="text-xs font-semibold text-black">{doc.dept}</p>
+                    <h3 className="text-[15px] font-bold font-['Quicksand']">{doc.name}</h3>
+                    <p className="text-xs font-semibold font-['Quicksand'] text-black">{doc.dept}</p>
                   </div>
 
                   {/* HOVER BUTTON */}
@@ -159,7 +159,7 @@ export default function Doctors() {
 
                 {/* DESC */}
                 <div className="p-4 text-center">
-                  <p className="text-[13px] text-black leading-relaxed line-clamp-3">
+                  <p className="text-[13px] text-black leading-relaxed font-['Quicksand'] tracking-wide line-clamp-3">
                     {doc.desc}
                   </p>
                 </div>
@@ -173,7 +173,7 @@ export default function Doctors() {
       </div>
 
       {/* FLOAT BUTTON */}
-      <button className="fixed bottom-6 right-6 bg-teal-600 text-white p-4 rounded-full shadow-lg hover:scale-110 transition">
+      <button className="fixed bottom-6 right-6 bg-teal-600 text-white font-['Quicksand'] p-4 rounded-full shadow-lg hover:scale-110 transition">
         <Calendar size={20} />
       </button>
 

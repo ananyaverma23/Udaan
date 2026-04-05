@@ -37,7 +37,8 @@ export default function FAQ() {
       q: "What is Fetal Growth & Doppler Scan?",
       a: "Fetal Growth & Doppler Scans are pregnancy ultrasound procedures used to access the baby's size and well being.",
     },
-    { q: "What is Fetal Neurosonogram?",
+    {
+      q: "What is Fetal Neurosonogram?",
       a: "A fetal neurosonogram is a prenatal ultrasound procedure that examines the fetal brain and spine for any abnormalities or malformations."
     },
     {
@@ -63,7 +64,7 @@ export default function FAQ() {
       <Container>
 
         {/* TITLE */}
-        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold text-teal-600 mb-10 md:mb-14">
+        <h2 className="text-center text-[22px] sm:text-[26px] md:text-[34px] font-bold font-['Quicksand'] text-teal-600 mb-10 md:mb-14">
           Frequently Asked Questions
         </h2>
 
@@ -81,11 +82,11 @@ export default function FAQ() {
                 onClick={() => toggle(i)}
                 className="w-full flex justify-between items-center px-5 md:px-6 py-4 text-left"
               >
-                <span className="text-[15px] md:text-[17px] font-semibold text-[#D4AF37]">
+                <span className="text-[15px] md:text-[17px] font-semibold font-['Quicksand'] text-[#D4AF37]">
                   {faq.q}
                 </span>
 
-                <span className="text-teal-600 text-xl">
+                <span className="text-teal-600 text-xl font-['Quicksand']">
                   {openIndex === i ? "−" : "+"}
                 </span>
               </button>
@@ -96,7 +97,7 @@ export default function FAQ() {
                   openIndex === i ? "max-h-40 pb-4" : "max-h-0"
                 }`}
               >
-                <p className="text-gray-600 text-[14px] md:text-[15px] leading-relaxed">
+                <p className="text-gray-600 text-[14px] md:text-[15px] leading-relaxed font-['Quicksand']">
                   {faq.a}
                 </p>
               </div>
@@ -110,5 +111,3 @@ export default function FAQ() {
     </div>
   );
 }
-
-

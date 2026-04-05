@@ -7,7 +7,6 @@ export default function ServicesDropdown() {
   const [activeSubMenu, setActiveSubMenu] = useState(null);
   const [subMenuIndex, setSubMenuIndex] = useState(null);
 
-  // ✅ Only last two are clickable
   const menu = [
     "Infertility Services",
     "Fetal Medicine Services",
@@ -61,7 +60,7 @@ export default function ServicesDropdown() {
 
   return (
     <div
-      className="flex items-start"
+      className="flex items-start font-['Quicksand']"
       onMouseLeave={() => {
         setActiveMenu(null);
         setActiveSubMenu(null);
@@ -91,12 +90,12 @@ export default function ServicesDropdown() {
             >
               {path ? (
                 <Link to={path} className="flex items-center gap-2 w-full">
-                  <span className="text-blue-500 font-bold">•</span>
+                  <span className="text-[#D4AF37] font-bold">•</span>
                   {name}
                 </Link>
               ) : (
                 <span className="flex items-center gap-2">
-                  <span className="text-blue-500 font-bold">•</span>
+                  <span className="text-[#D4AF37] font-bold">•</span>
                   {name}
                 </span>
               )}
@@ -129,12 +128,12 @@ export default function ServicesDropdown() {
               >
                 {item.path ? (
                   <Link to={item.path} className="flex-1 break-words mr-2">
-                    <span className="text-blue-500 mr-2 font-bold">•</span>
+                    <span className="text-[#D4AF37] mr-2 font-bold">•</span>
                     {item.name}
                   </Link>
                 ) : (
                   <span className="flex-1 break-words mr-2">
-                    <span className="text-blue-500 mr-2 font-bold">•</span>
+                    <span className="text-[#D4AF37] mr-2 font-bold">•</span>
                     {item.name}
                   </span>
                 )}
@@ -161,7 +160,7 @@ export default function ServicesDropdown() {
                       to={child.path}
                       className="px-4 py-3 flex items-start gap-2 text-gray-600 hover:bg-gray-50 hover:text-teal-600 transition-colors leading-tight"
                     >
-                      <span className="text-blue-500 font-bold">•</span>
+                      <span className="text-[#D4AF37] font-bold">•</span>
                       <span className="break-words">{child.name}</span>
                     </Link>
                   ))}
@@ -172,5 +171,3 @@ export default function ServicesDropdown() {
     </div>
   );
 }
-
-

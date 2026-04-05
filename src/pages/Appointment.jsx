@@ -12,33 +12,34 @@ export default function Appointment() {
             <MessageCircle size={40} />
           </div>
           
-          <h2 className="text-3xl font-bold text-slate-800 mb-4 tracking-tight">
+          <h2 className="text-3xl font-bold font-['Quicksand'] tracking-wide text-slate-800 mb-4">
             Book via WhatsApp
           </h2>
-          <p className="text-gray-600 mb-8 leading-relaxed">
+
+          <p className="text-gray-600 font-['Quicksand'] tracking-wide mb-8 leading-relaxed">
             To provide the fastest service and personalized care, we handle all our bookings through our official WhatsApp Business account.
           </p>
           
-          <ul className="text-left space-y-3 mb-10 inline-block mx-auto">
+          <ul className="text-left space-y-3 mb-10 inline-block mx-auto font-['Quicksand']">
             <li className="flex items-center gap-2 text-gray-500 text-sm italic">
-              <span className="text-blue-500">✓</span> Instant confirmation
+              <span className="text-[#D4AF37]">✓</span> Instant confirmation
             </li>
             <li className="flex items-center gap-2 text-gray-500 text-sm italic">
-              <span className="text-blue-500">✓</span> Send reports directly
+              <span className="text-[#D4AF37]">✓</span> Send reports directly
             </li>
             <li className="flex items-center gap-2 text-gray-500 text-sm italic">
-              <span className="text-blue-500">✓</span> Direct chat with our team
+              <span className="text-[#D4AF37]">✓</span> Direct chat with our team
             </li>
           </ul>
 
           <a 
             href={whatsappUrl}
-            className="block w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold text-lg hover:bg-[#20ba59] transition-all shadow-lg shadow-green-100 active:scale-95"
+            className="block w-full bg-[#25D366] text-white py-4 rounded-2xl font-bold font-['Quicksand'] text-lg hover:bg-[#20ba59] transition-all shadow-lg shadow-green-100 active:scale-95"
           >
             Chat with us on WhatsApp
           </a>
           
-          <p className="mt-6 text-[12px] text-gray-400">
+          <p className="mt-6 text-[12px] text-gray-400 font-['Quicksand'] tracking-wide">
             Clicking this will open WhatsApp on your device.
           </p>
         </div>
@@ -46,5 +47,3 @@ export default function Appointment() {
     </div>
   );
 }
-
-

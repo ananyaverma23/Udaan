@@ -29,12 +29,14 @@ export default function Gallery() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F0F7F4] to-[#FBF6F6] p-6">
       <div className="mb-6 flex items-center flex-col md:flex-row justify-between">
-        <h1 className="text-3xl font-bold mb-6">Gallery</h1>
+        <h1 className="text-3xl font-bold font-['Quicksand'] tracking-wide mb-6">
+          Gallery
+        </h1>
 
         <div className="flex flex-col md:flex-row items-center gap-3">
           <input
             placeholder="Search..."
-            className="rounded-lg border px-4 py-2 shadow-sm"
+            className="rounded-lg border px-4 py-2 shadow-sm font-['Quicksand']"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
           />
@@ -43,7 +45,7 @@ export default function Gallery() {
             {isAdmin && (
             <Link
               to="/admin/create"
-              className="rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#1E293B] px-4 py-2.5 text-white m-2"
+              className="rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#1E293B] px-4 py-2.5 text-white m-2 font-['Quicksand']"
             >
               Create
             </Link>
@@ -52,14 +54,14 @@ export default function Gallery() {
           {!isAdmin ? (
             <button
               onClick={() => navigate("/admin")}
-              className="rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#1E293B] px-4 py-2 text-white m-2"
+              className="rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#1E293B] px-4 py-2.5 text-white m-2 font-['Quicksand']"
             >
               Staff Only
             </button>
           ) : (
             <button
               onClick={handleLogout}
-              className="rounded-lg bg-red-500 px-4 py-2 text-white m-2"
+              className="rounded-lg bg-gradient-to-r from-[#D4AF37] to-[#1E293B] px-4 py-2.5 text-white m-2 font-['Quicksand']"
             >
               Logout
             </button>
@@ -86,15 +88,15 @@ export default function Gallery() {
             )}
 
             <div className="p-4">
-              <h2 className="text-lg font-semibold">{post.title}</h2>
-              <p className="text-sm text-gray-500">{post.category}</p>
+              <h2 className="text-lg font-semibold font-['Quicksand'] tracking-wide">{post.title}</h2>
+              <p className="text-sm text-gray-500 font-['Quicksand']">{post.category}</p>
             </div>
           </div>
         ))}
       </div>
 
       {filtered.length === 0 && (
-        <p className="mt-10 text-center text-gray-500">No posts found!</p>
+        <p className="mt-10 text-center text-gray-500 font-['Quicksand'] tracking-wide">No posts found!</p>
       )}
     </div>
   );
