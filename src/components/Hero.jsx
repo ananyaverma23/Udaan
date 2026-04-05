@@ -40,9 +40,14 @@ export default function Hero() {
             <TypeAnimation
               sequence={[
                 "Your Journey to Parenthood Starts Here",
-                1000,
+                2200,
+                "",
+                500,
               ]}
               speed={50}
+              deletionSpeed={65}
+              repeat={Infinity}
+              preRenderFirstString={false}
               className="font-['Times_New_Roman',serif] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-normal leading-[1.15]"
             />
 
