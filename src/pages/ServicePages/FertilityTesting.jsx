@@ -12,15 +12,6 @@ import {
 } from "lucide-react";
 
 const FertilityTesting = () => {
-  const testingProcedures = [
-    "Hormonal blood profile (AMH, FSH, LH)",
-    "Comprehensive Semen Analysis",
-    "Trans-vaginal Ultrasound (TVS)",
-    "Tubal Patency Test (HSG/HyCoSy)",
-    "Follicular Monitoring",
-    "Infectious Disease Screening"
-  ];
-
   const procedureCards = [
      {
       title: "Initial Consultation",
@@ -72,8 +63,8 @@ const FertilityTesting = () => {
               className="absolute top-0 left-0 w-full h-full"
               src="https://www.youtube.com/embed/Bx-yK7ngSHQ?si=EMiSh3TgEuA3ObJu" 
               title="YouTube video player" 
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy">
             </iframe> 
           </div>
         </div>

@@ -1,3 +1,5 @@
+import { getStorageJson, setStorageJson } from "./storage";
+
 const STORAGE_KEY = "udaan_gallery";
 
 const samplePosts = [
@@ -81,24 +83,21 @@ export const normalizePost = (post = {}) => {
 };
 
 export const getPosts = () => {
-  const storedPosts = JSON.parse(localStorage.getItem(STORAGE_KEY) || "null");
+  const storedPosts = getStorageJson(STORAGE_KEY, null);
 
-  if (!storedPosts || storedPosts.length === 0) {
+  if (!Array.isArray(storedPosts) || storedPosts.length === 0) {
     const normalizedSamples = samplePosts.map(normalizePost);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(normalizedSamples));
+    setStorageJson(STORAGE_KEY, normalizedSamples);
     return normalizedSamples;
   }
 
   const normalizedPosts = storedPosts.map(normalizePost);
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(normalizedPosts));
+  setStorageJson(STORAGE_KEY, normalizedPosts);
   return normalizedPosts;
 };
 
 export const savePosts = (posts) => {
-  localStorage.setItem(
-    STORAGE_KEY,
-    JSON.stringify(posts.map(normalizePost))
-  );
+  setStorageJson(STORAGE_KEY, posts.map(normalizePost));
 };
 
 export const createPost = (post) => {

@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import { deletePost, getPostById } from "../../utils/galleryStorage";
+import { getStorageItem } from "../../utils/storage";
 
 export default function GalleryDetail() {
   const [post, setPost] = useState(null);
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const role = localStorage.getItem("role");
+  const role = getStorageItem("role");
   const isAdmin = role === "admin";
 
   useEffect(() => {
@@ -25,7 +26,7 @@ export default function GalleryDetail() {
 
   return (
     <div className="admin-page min-h-screen bg-gradient-to-br from-[#F0F7F4] to-[#FBF6F6] p-6">
-      <Link to="/gallery" className="mb-4 inline-block text-teal-600 font-medium font-quicksand">
+      <Link to="/gallery" className="mb-4 inline-block text-teal-600 font-medium">
         Back
       </Link>
 

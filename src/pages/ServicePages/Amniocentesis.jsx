@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import {
   FaHeartbeat,
   FaUserMd,
@@ -38,7 +38,7 @@ export default function Amniocentesis() {
 
       {/* HERO */}
       <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-12 px-4 text-center">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <Motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Amniocentesis
           </h1>
@@ -46,7 +46,7 @@ export default function Amniocentesis() {
             A diagnostic test that provides accurate information about your
             baby’s genetic health, helping guide important medical decisions.
           </p>
-        </motion.div>
+        </Motion.div>
       </section>
 
       {/* INTRO */}

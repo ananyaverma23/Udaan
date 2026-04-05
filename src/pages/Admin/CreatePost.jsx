@@ -1,15 +1,16 @@
 import { useState, useEffect } from "react";
 import { createPost } from "../../utils/galleryStorage";
 import { useNavigate } from "react-router-dom";
+import { getStorageItem } from "../../utils/storage";
 
 export default function CreatePost() {
   const navigate = useNavigate();
 
-  const role = localStorage.getItem("role");
+  const role = getStorageItem("role");
 
   useEffect(() => {
     if (role !== "admin") navigate("/gallery");
-  }, []);
+  }, [navigate, role]);
 
   const [form, setForm] = useState({
     title: "",
@@ -127,6 +128,7 @@ export default function CreatePost() {
         {preview && (
           <img
             src={preview}
+            alt={form.title ? `${form.title} preview` : "Gallery post preview"}
             className="w-full h-48 object-cover rounded-lg mb-4 shadow-sm"
           />
         )}

@@ -1,16 +1,16 @@
 import { useState, useEffect } from "react";
 import UdaanLogo from "../assets/UdaanLogo.png";
 
+const LOADER_MESSAGES = [
+  "24/7 Support Available",
+  "State-of-the-art Facilities",
+  "Expert Medical Care",
+  "Your Trust, Our Commitment",
+];
+
 export default function Loader({ onFinished }) {
   const [progress, setProgress] = useState(0);
   const [textIndex, setTextIndex] = useState(0);
-
-  const messages = [
-    "24/7 Support Available",
-    "State-of-the-art Facilities",
-    "Expert Medical Care",
-    "Your Trust, Our Commitment"
-  ];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -28,7 +28,7 @@ export default function Loader({ onFinished }) {
 
   useEffect(() => {
     const textInterval = setInterval(() => {
-      setTextIndex((prev) => (prev + 1) % messages.length);
+      setTextIndex((prev) => (prev + 1) % LOADER_MESSAGES.length);
     }, 2000);
     return () => clearInterval(textInterval);
   }, []);
@@ -64,7 +64,7 @@ export default function Loader({ onFinished }) {
             className="transition-transform duration-700 ease-in-out"
             style={{ transform: `translateY(-${textIndex * 40}px)` }}
           >
-            {messages.map((msg, idx) => (
+            {LOADER_MESSAGES.map((msg, idx) => (
               <div key={idx} className="h-10 flex items-center justify-center">
                 <span className="bg-[#F0F7F4] text-teal-600 px-5 py-1.5 rounded-full text-xs sm:text-sm font-bold font-['Quicksand'] border border-[#F0F7F4] shadow-sm">
                   {msg}

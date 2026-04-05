@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { setStorageItem } from "../../utils/storage";
 
 export default function Login() {
   const navigate = useNavigate();
@@ -13,7 +14,7 @@ export default function Login() {
 
   const handleLogin = () => {
     if (form.email === "admin@udaan.com" && form.password === "1234") {
-      localStorage.setItem("role", "admin");
+      setStorageItem("role", "admin");
       navigate("/gallery");
     } else {
       alert("Invalid credentials");

@@ -1,16 +1,17 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { getPostById, updatePost } from "../../utils/galleryStorage";
 import { useState, useEffect } from "react";
+import { getStorageItem } from "../../utils/storage";
 
 export default function EditPost() {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const role = localStorage.getItem("role");
+  const role = getStorageItem("role");
 
   useEffect(() => {
     if (role !== "admin") navigate(`/admin/${id}`);
-  }, []);
+  }, [id, navigate, role]);
 
   const existing = getPostById(id);
 
@@ -29,7 +30,7 @@ export default function EditPost() {
 
         {/* Back */}
         <button
-          onClick={() => navigate(`/admin/${post.id}`)}
+          onClick={() => navigate(`/admin/${id}`)}
           className="text-sm text-gray-500 hover:text-gray-700 mb-4"
         >
           ← Back

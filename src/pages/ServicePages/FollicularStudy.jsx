@@ -77,9 +77,9 @@ export default function FollicularStudy() {
 
         <iframe width="560" height="315" className="rounded-lg shadow-lg" 
             src="https://www.youtube.com/embed/6nodrF_-KWQ?si=qZqGv-jQHGqVy_Ee" 
-            title="YouTube video player" frameborder="0" 
+            title="YouTube video player" frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy">
         </iframe>
 
         <div>

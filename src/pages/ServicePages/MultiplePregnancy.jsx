@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import {
   FaBaby,
   FaHeartbeat,
@@ -39,7 +39,7 @@ export default function MultiplePregnancy() {
 
       {/* HERO */}
       <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-12 px-4 text-center">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <Motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Multiple Pregnancy Care
           </h1>
@@ -47,7 +47,7 @@ export default function MultiplePregnancy() {
             Comprehensive care and monitoring for twin or multiple pregnancies
             to ensure the health of both mother and babies.
           </p>
-        </motion.div>
+        </Motion.div>
       </section>
 
       {/* INTRO */}

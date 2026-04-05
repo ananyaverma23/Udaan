@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 import {
   FaHeartbeat,
   FaUserMd,
@@ -39,7 +39,7 @@ export default function GrowthScan() {
 
       {/* HERO */}
       <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-12 px-4 text-center">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <Motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Fetal Growth Scan
           </h1>
@@ -47,7 +47,7 @@ export default function GrowthScan() {
             A third-trimester ultrasound that monitors your baby’s growth,
             weight, and overall well-being.
           </p>
-        </motion.div>
+        </Motion.div>
       </section>
 
       {/* INTRO */}
@@ -88,8 +88,8 @@ export default function GrowthScan() {
               className="absolute top-0 left-0 w-full h-full"
               src="https://www.youtube.com/embed/Bx-yK7ngSHQ?si=EMiSh3TgEuA3ObJu" 
               title="YouTube video player" 
-              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+              frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerPolicy="strict-origin-when-cross-origin" allowFullScreen loading="lazy">
             </iframe> 
           </div>
         </div>

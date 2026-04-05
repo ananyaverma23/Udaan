@@ -1,23 +1,22 @@
-import { useEffect, useState } from "react";
+import { useMemo, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { getPosts } from "../utils/galleryStorage";
+import { getStorageItem, removeStorageItem } from "../utils/storage";
 
 export default function Gallery() {
-  const [posts, setPosts] = useState([]);
   const [search, setSearch] = useState("");
-  const [role, setRole] = useState(localStorage.getItem("role"));
+  const [role, setRole] = useState(() => getStorageItem("role"));
   const navigate = useNavigate();
   const location = useLocation();
+  const posts = useMemo(() => {
+    if (!location.key) return getPosts();
+    return getPosts();
+  }, [location.key]);
 
   const isAdmin = role === "admin";
 
-  useEffect(() => {
-    setPosts(getPosts());
-    setRole(localStorage.getItem("role"));
-  }, [location.key]);
-
   const handleLogout = () => {
-    localStorage.removeItem("role");
+    removeStorageItem("role");
     setRole(null);
     navigate("/gallery");
   };

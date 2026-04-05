@@ -1,6 +1,6 @@
 import { useState } from "react";
-import {Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { motion as Motion } from "framer-motion";
 import {
   FaHeartbeat,
   FaUserMd,
@@ -39,7 +39,7 @@ export default function DopplerScan() {
 
       {/* HERO */}
       <section className="bg-gradient-to-r from-teal-600 to-[#1E293B] text-white py-12 px-4 text-center">
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
+        <Motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
           <h1 className="text-3xl md:text-4xl font-bold mb-4">
             Fetal Doppler Scan
           </h1>
@@ -47,7 +47,7 @@ export default function DopplerScan() {
             A specialized ultrasound that evaluates blood flow to ensure your
             baby is receiving adequate oxygen and nutrients.
           </p>
-        </motion.div>
+        </Motion.div>
       </section>
 
       {/* INTRO */}

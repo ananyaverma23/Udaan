@@ -9,7 +9,6 @@ import {
   HeartPulse,
   Apple,
   Microscope,
-  ChevronDown,
 } from "lucide-react";
 
 export default function MultispecialtyOPD() {
@@ -33,52 +32,48 @@ export default function MultispecialtyOPD() {
     { title: "Treatment Plan", desc: "Coordinated plan is created by specialists." },
   ];
 
-    const faqs = [
-        {
-            q: "What is a Multispecialty OPD service?",
-            a: "A Multispecialty OPD is an outpatient service where patients can consult doctors from different specialties in one place. It helps in faster diagnosis, better coordination between doctors, and efficient treatment planning without needing multiple hospital visits.",
-        },
-        {
-            q: "Do I need to book an appointment in advance?",
-            a: "Yes, it is recommended to book an appointment beforehand to avoid waiting time and ensure that the required specialists are available during your visit.",
-        },
-        {
-            q: "How many doctors can I consult in one visit?",
-            a: "Depending on your medical needs, you may consult one or multiple specialists in a single visit. The care team may guide you on which specialists are required.",
-        },
-        {
-            q: "Is Multispecialty OPD suitable for pregnancy care?",
-            a: "Yes, it is highly beneficial during pregnancy, especially for high-risk cases, as it allows coordination between gynecologists, radiologists, genetic experts, and other specialists.",
-        },
-        {
-            q: "Will all tests be done on the same day?",
-            a: "In most cases, necessary tests and evaluations are completed on the same day, depending on availability and the patient's condition.",
-        },
-        {
-            q: "How much time does a visit usually take?",
-            a: "The duration varies depending on consultations and tests, but most visits are completed within a few hours on the same day.",
-        },
-        {
-            q: "Is this service suitable for chronic conditions?",
-            a: "Yes, patients with chronic or complex conditions benefit greatly from multispecialty care as it ensures coordinated treatment and monitoring.",
-        },
-        {
-            q: "Do I need a referral to visit Multispecialty OPD?",
-            a: "In most cases, a referral is not required. However, if you have previous medical records or reports, it is helpful to bring them along.",
-        },
-        {
-            q: "Can I follow up with the same doctors later?",
-            a: "Yes, follow-up visits can be scheduled with the same specialists to ensure continuity of care and proper monitoring of your condition.",
-        },
-        {
-            q: "Is Multispecialty OPD more expensive?",
-            a: "While costs may vary, it often saves time and reduces repeated visits, making it cost-effective in the long run.",
-        },
-    ];
-
-  const toggleFAQ = (index) => {
-    const [openIndex, setOpenIndex] = useState(0);
-  };
+  const faqs = [
+    {
+      q: "What is a Multispecialty OPD service?",
+      a: "A Multispecialty OPD is an outpatient service where patients can consult doctors from different specialties in one place. It helps in faster diagnosis, better coordination between doctors, and efficient treatment planning without needing multiple hospital visits.",
+    },
+    {
+      q: "Do I need to book an appointment in advance?",
+      a: "Yes, it is recommended to book an appointment beforehand to avoid waiting time and ensure that the required specialists are available during your visit.",
+    },
+    {
+      q: "How many doctors can I consult in one visit?",
+      a: "Depending on your medical needs, you may consult one or multiple specialists in a single visit. The care team may guide you on which specialists are required.",
+    },
+    {
+      q: "Is Multispecialty OPD suitable for pregnancy care?",
+      a: "Yes, it is highly beneficial during pregnancy, especially for high-risk cases, as it allows coordination between gynecologists, radiologists, genetic experts, and other specialists.",
+    },
+    {
+      q: "Will all tests be done on the same day?",
+      a: "In most cases, necessary tests and evaluations are completed on the same day, depending on availability and the patient's condition.",
+    },
+    {
+      q: "How much time does a visit usually take?",
+      a: "The duration varies depending on consultations and tests, but most visits are completed within a few hours on the same day.",
+    },
+    {
+      q: "Is this service suitable for chronic conditions?",
+      a: "Yes, patients with chronic or complex conditions benefit greatly from multispecialty care as it ensures coordinated treatment and monitoring.",
+    },
+    {
+      q: "Do I need a referral to visit Multispecialty OPD?",
+      a: "In most cases, a referral is not required. However, if you have previous medical records or reports, it is helpful to bring them along.",
+    },
+    {
+      q: "Can I follow up with the same doctors later?",
+      a: "Yes, follow-up visits can be scheduled with the same specialists to ensure continuity of care and proper monitoring of your condition.",
+    },
+    {
+      q: "Is Multispecialty OPD more expensive?",
+      a: "While costs may vary, it often saves time and reduces repeated visits, making it cost-effective in the long run.",
+    },
+  ];
 
   return (
     <div className="w-full">
