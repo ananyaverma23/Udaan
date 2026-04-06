@@ -70,7 +70,7 @@ export default function Navbar() {
     },
     {
       name: "Multispeciality OPD Services",
-      path: "/services/multispeciality-opd",
+      path: "/services/opd-services",
     },
   ];
 
@@ -147,19 +147,26 @@ export default function Navbar() {
                 <div className="flex flex-col gap-4 mt-2 animate-in fade-in duration-300">
                   {menuData.map((item) => (
                     <div key={item.name} className="border-b border-gray-50 pb-3">
-                      <div 
-                        onClick={() => setMobileLevel1(mobileLevel1 === item.name ? null : item.name)}
-                        className="flex justify-between items-center cursor-pointer"
-                      >
-                        <span className={`${mobileTextStyle} transition-colors ${mobileLevel1 === item.name ? "text-blue-600" : ""}`}>
-                          {item.name}
-                        </span>
-                        {item.subItems ? (
-                          mobileLevel1 === item.name ? <Minus size={18} className="text-blue-600" /> : <Plus size={18} className="text-gray-400" />
-                        ) : (
-                          <Link to={item.path || "/"} onClick={() => setIsOpen(false)} className="text-gray-500 hover:text-blue-500 font-['Quicksand']">Visit</Link>
-                        )}
-                      </div>
+                      {item.subItems ? (
+                        <div 
+                          onClick={() => setMobileLevel1(mobileLevel1 === item.name ? null : item.name)}
+                          className="flex justify-between items-center cursor-pointer"
+                        >
+                          <span className={`${mobileTextStyle} transition-colors ${mobileLevel1 === item.name ? "text-blue-600" : ""}`}>
+                            {item.name}
+                          </span>
+                          {mobileLevel1 === item.name ? <Minus size={18} className="text-blue-600" /> : <Plus size={18} className="text-gray-400" />}
+                        </div>
+                      ) : (
+                        <Link
+                          to={item.path || "/"}
+                          onClick={() => setIsOpen(false)}
+                          className="flex justify-between items-center cursor-pointer"
+                        >
+                          <span className={mobileTextStyle}>{item.name}</span>
+                          <span className="text-gray-500 hover:text-blue-500 font-['Quicksand']">Visit</span>
+                        </Link>
+                      )}
 
                       {item.subItems && mobileLevel1 === item.name && (
                         <div className="pl-4 mt-4 flex flex-col gap-4 animate-in fade-in slide-in-from-left-1 duration-200">
